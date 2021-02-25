@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".Registration">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="127dp"
+        android:layout_height="97dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="155dp"
+        app:layout_constraintBottom_toTopOf="@+id/usernameregitration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/userimage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/userimage"
+            tools:src="@drawable/ic_baseline_person_242" />
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="58dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="7dp"
+        android:background="@drawable/background2"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/usernameregitration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/usernameregitration"
+        app:layout_constraintTop_toTopOf="@+id/usernameregitration"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:background="@drawable/textviewbackground"
+        android:id="@+id/usernameregitration"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="11dp"
+        android:autofillHints=""
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/mailregistration"
+        app:layout_constraintEnd_toStartOf="@+id/sign_in_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <EditText
+        android:background="@drawable/textviewbackground"
+        android:id="@+id/mailregistration"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="6dp"
+        android:autofillHints=""
+        android:drawableStart="@drawable/ic_baseline_alternate_email_24"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/phonenumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameregitration" />
+
+    <EditText
+        android:background="@drawable/textviewbackground"
+        android:id="@+id/phonenumber"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="1dp"
+        android:autofillHints=""
+        android:drawableStart="@drawable/ic_baseline_local_phone_24"
+        android:ems="10"
+        android:hint="@string/phone_number"
+        android:inputType="textPassword|phone"
+        app:layout_constraintBottom_toTopOf="@+id/passwordregistration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mailregistration" />
+
+    <EditText
+        android:background="@drawable/textviewbackground"
+        android:id="@+id/passwordregistration"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="7dp"
+        android:autofillHints=""
+        android:drawableStart="@drawable/ic_baseline_lock_open_24"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/password2registration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonenumber" />
+
+    <EditText
+        android:background="@drawable/textviewbackground"
+        android:id="@+id/password2registration"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="11dp"
+        android:autofillHints=""
+        android:drawableStart="@drawable/ic_baseline_lock_open_24"
+        android:ems="10"
+        android:hint="@string/retype_the_password"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordregistration" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="53dp"
+        android:layout_marginStart="118dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="100dp"
+        app:cardCornerRadius="@dimen/_200sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password2registration">
+
+        <TextView
+            android:id="@+id/Register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#C627AAA6"
+            android:gravity="center"
+            android:text="@string/register"
+            android:textColor="#731717"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/password2registration" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

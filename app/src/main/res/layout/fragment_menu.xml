@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment"
+    android:background="@drawable/background2">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_90sdp"
+    android:orientation="horizontal">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/chicken"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/ic_baseline_departure_board_24"
+        android:layout_gravity="center"
+        />
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/meats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_departure_board_24"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        />
+
+</LinearLayout>
+
+    <ListView
+        android:id="@+id/meunview"
+        android:layout_width="match_parent"
+        android:layout_height="507dp"
+        android:layout_marginStart="@dimen/_25sdp"
+        android:layout_marginTop="@dimen/_112sdp"
+        android:layout_marginEnd="@dimen/_25sdp" />
+</FrameLayout>

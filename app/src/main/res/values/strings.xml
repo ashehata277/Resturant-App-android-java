@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Logo</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign UP</string>
+    <string name="log_in">Log in</string>
+    <string name="usernameplain">username</string>
+    <string name="passwordplain">Password</string>
+    <string name="userimage">userimage</string>
+    <string name="register">Register</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="email">Email</string>
+    <string name="retype_the_password">Retype the Password</string>
+    <string name="wait_for_registration">Wait For Registration</string>
+    <string name="update">update</string>
+    <string name="Phone">Phone</string>
+    <string name="plainphone">Phone Number</string>
+    <string name="itemname">ItemName</string>
+    <string name="notes">Notes</string>
+    <string name="total">Total</string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+    <string name="number">number</string>
+    <string name="clear_cart">Clear Cart</string>
+    <string name="send_the_order">Send The Order</string>
+    <string name="the_cart">The Cart</string>
+    <string name="sure_to_order">Sure To Order</string>
+    <string name="name">Name</string>
+    <string name="no">No</string>
+    <string name="note">Note</string>
+    <string name="the_order">The Order</string>
+    <string name="total_price_for_your_order">Total Price for your order</string>
+    <string name="_0_l_e">0 L.E</string>
+    <string name="back_to_menu">Back to Menu</string>
+
+
+</resources>

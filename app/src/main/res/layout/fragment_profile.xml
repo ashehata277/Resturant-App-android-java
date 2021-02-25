@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profilefragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    tools:context=".profileFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/_90sdp"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="152dp"
+        app:cardCornerRadius="155dp"
+        app:layout_constraintBottom_toTopOf="@+id/mailprofile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/userimageprofile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/userimage"
+            tools:src="@drawable/ic_baseline_person_242" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/mailprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonback"
+        android:drawableLeft="@drawable/ic_baseline_alternate_email_24"
+        android:gravity="center_horizontal"
+        android:text="Mail"
+        android:textSize="@dimen/_24sdp"
+        app:layout_constraintBottom_toTopOf="@+id/UserNameProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+    <TextView
+        android:id="@+id/UserNameProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/buttonback"
+        android:drawableLeft="@drawable/ic_baseline_person_24"
+        android:gravity="center_horizontal"
+        android:text="Userame"
+        android:textSize="@dimen/_24sdp"
+        app:layout_constraintBottom_toTopOf="@+id/phoneprofile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mailprofile" />
+
+
+    <TextView
+        android:id="@+id/phoneprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="99dp"
+        android:background="@drawable/buttonback"
+        android:drawableLeft="@drawable/ic_baseline_local_phone_24"
+        android:gravity="center_horizontal"
+        android:text="phone"
+        android:textSize="@dimen/_24sdp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserNameProfile" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="249dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="110dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phoneprofile" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

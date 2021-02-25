@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+<solid android:color="@color/fui_bgTwitter"/>
+    <corners android:radius="@dimen/_25sdp" />
+    <padding android:right="@dimen/_5sdp" android:left="@dimen/_5sdp"/>
+    <gradient android:startColor="@color/purple_700" android:endColor="?android:attr/textColorLink"/>
+</shape>

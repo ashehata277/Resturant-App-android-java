@@ -1,0 +1,14 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <item >
+        <shape >
+            <solid android:color="@color/purple_200" />
+            <gradient android:startColor="@color/purple_200" android:endColor="@android:color/holo_red_light" />
+            <corners android:radius="@dimen/_2sdp"/>
+        </shape>
+    </item>
+</layer-list>
