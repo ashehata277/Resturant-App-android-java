@@ -38,6 +38,7 @@ public class RecieverBroadCast extends BroadcastReceiver {
                     if(((Boolean)snapshot.getValue())){
                         //ShowNotification(context,"Order Accepted","Congratulation, Your order is Accepted\n we will arrive to you in max 30 minutes");
                         Intent WaitIntent = new Intent(context,WaitForResponse.class);
+                        WaitIntent.putExtra("OrderCode",OrderCode);
                         context.startForegroundService(WaitIntent);
                         result.finish();
                     }
