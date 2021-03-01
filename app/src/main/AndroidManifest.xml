@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
 
     <application
         android:allowBackup="true"
@@ -16,13 +17,22 @@
         android:supportsRtl="false"
         android:theme="@style/Theme.Recently"
         android:usesCleartextTraffic="true">
-        <receiver android:name=".RecieverBroadCast"
+        <activity android:name=".WaitingActivity"></activity>
+
+        <service
+            android:name=".WaitForResponse"
+            android:enabled="true"
+            android:exported="true" />
+
+        <receiver
+            android:name=".RecieverBroadCast"
             android:enabled="true"
             android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.OrderReciever"/>
+                <action android:name="android.intent.action.OrderReciever" />
             </intent-filter>
         </receiver>
+
         <activity android:name=".Order" />
         <activity android:name=".Card" />
         <activity android:name=".MainAppActivity" />
@@ -30,7 +40,9 @@
         <activity
             android:name=".Registration"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".MainActivity"
+            android:showOnLockScreen="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

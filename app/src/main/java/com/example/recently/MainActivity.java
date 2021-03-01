@@ -82,9 +82,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-
                     Login();
-                }catch (Exception exp)
+                }
+                catch (Exception exp)
                 {
                     exp.printStackTrace();
                     builder2.setMessage("SomeThing Error please try Later.")
@@ -179,7 +179,6 @@ public class MainActivity extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.child("Users").child(phoneString).getKey().equals(phoneString))
                 {
-
                     if(snapshot.child("Users").child(phoneString).child("password").getValue().toString().equals(password))
                     {
                         Toast.makeText(MainActivity.this,"Logging in successed",Toast.LENGTH_LONG).show();

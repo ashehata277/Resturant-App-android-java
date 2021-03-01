@@ -1,5 +1,6 @@
 package com.example.recently;
 
+import android.annotation.SuppressLint;
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -9,6 +10,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
+import android.view.WindowManager;
 import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.core.app.NotificationCompat;
@@ -17,6 +19,10 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import static android.app.Notification.VISIBILITY_PRIVATE;
+import static android.app.Notification.VISIBILITY_PUBLIC;
+
 public class RecieverBroadCast extends BroadcastReceiver {
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -30,7 +36,9 @@ public class RecieverBroadCast extends BroadcastReceiver {
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
                 try{
                     if(((Boolean)snapshot.getValue())){
-                        ShowNotification(context,"Order Accepted","Congratulation, Your order is Accepted\n we will arrive to you in max 30 minutes");
+                        //ShowNotification(context,"Order Accepted","Congratulation, Your order is Accepted\n we will arrive to you in max 30 minutes");
+                        Intent WaitIntent = new Intent(context,WaitForResponse.class);
+                        context.startForegroundService(WaitIntent);
                         result.finish();
                     }
                     else if (!((Boolean)(snapshot.getValue())))
@@ -53,7 +61,7 @@ public class RecieverBroadCast extends BroadcastReceiver {
     }
     public void ShowNotification(Context context,String title,String Message)
     {
-        PendingIntent notification = PendingIntent.getActivity(context,0,new Intent(context,MainAppActivity.class),0);
+        PendingIntent notification = PendingIntent.getActivity(context,0,new Intent(context,MainAppActivity.class), 0);
         NotificationManager noti =(NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
         createNotificationChannel("Order","Order","Order",noti);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context,"Order")
@@ -78,6 +86,7 @@ public class RecieverBroadCast extends BroadcastReceiver {
         NotificationChannel channel = new NotificationChannel(id, name, importance);
         channel.setDescription(description);
         channel.enableLights(true);
+        channel.setLockscreenVisibility(VISIBILITY_PUBLIC);
         channel.setLightColor(Color.RED);
         channel.enableVibration(true);
         channel.setVibrationPattern(new long[]{100, 200, 300, 400, 500, 400, 300, 200, 400});

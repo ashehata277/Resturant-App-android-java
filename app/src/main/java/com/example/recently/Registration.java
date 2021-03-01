@@ -92,9 +92,6 @@ public class Registration extends AppCompatActivity {
     private boolean uploaded=false;
     private  DatabaseReference rootref;
     private SimpleDateFormat format;
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -119,7 +116,6 @@ public class Registration extends AppCompatActivity {
         root.Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                root.Register.setEnabled(false);
                 username =root.usernameregitration.getText().toString().trim();
                 password1=root.passwordregistration.getText().toString().trim();
                 password2=root.password2registration.getText().toString().trim();
@@ -128,6 +124,7 @@ public class Registration extends AppCompatActivity {
                 if(!TextUtils.isEmpty(username) && !TextUtils.isEmpty(mail)&& ! TextUtils.isEmpty(password1)
                 && !TextUtils.isEmpty(password2) && !TextUtils.isEmpty(phoneString) && password1.equals(password2))
                 {
+
                     phone = Long.parseLong(phoneString);
                     //need to sign in with google first to get mail
                     if(imagecheck) {
@@ -208,7 +205,8 @@ public class Registration extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
         format =new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS", Locale.getDefault());
     }
-    private void signIn() {
+    private void signIn()
+    {
         Intent signInIntent = mGoogleSignInClient.getSignInIntent();
         startActivityForResult(signInIntent, RC_SIGN_IN);
     }
@@ -220,7 +218,6 @@ public class Registration extends AppCompatActivity {
             startActivityForResult(gallery,100);
         }
     }
-
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -285,7 +282,6 @@ public class Registration extends AppCompatActivity {
                     }
                 });
     }
-
     public String encodeImage(Bitmap image)
     {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
