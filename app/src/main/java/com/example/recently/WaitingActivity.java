@@ -3,12 +3,19 @@ package com.example.recently;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Service;
+import android.content.ComponentName;
 import android.content.Intent;
+import android.content.ServiceConnection;
 import android.database.Cursor;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.IBinder;
+import android.os.Message;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.View;
 
 import com.example.recently.databinding.ActivityWaitingBinding;
 import com.google.firebase.database.DataSnapshot;
@@ -22,7 +29,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
 
-public class WaitingActivity extends AppCompatActivity {
+public class WaitingActivity extends AppCompatActivity implements ServiceConnection {
     ActivityWaitingBinding root;
     private Bundle ComeIntent;
     private String OrderCode;
@@ -34,7 +41,8 @@ public class WaitingActivity extends AppCompatActivity {
     private String Phone;
     private String OrderDate;
     private Long Price;
-    private ProgressBar progressBar;
+    private WaitForResponse.ForBound forBound;
+    private WaitForResponse waitForResponse;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,14 +60,53 @@ public class WaitingActivity extends AppCompatActivity {
         root.progressBar5.setMax(60);
         root.progressBar5.setProgress(CurrentProgress);
         getDataFromCloud();
-        try{
-            progressBar.execute();
-        }catch (Exception exp)
+        Intent stopIntent =new Intent (WaitingActivity.this,WaitForResponse.class);
+        bindService(stopIntent,this,0);
+        ChangeUI ui = new ChangeUI();
+        new Thread() {
+            @Override
+            public void run() {
+                super.run();
+                while(CurrentProgress<60)
+                {
+                try
+                    {
+                        Thread.sleep(1000*60);
+                        CurrentProgress++;
+                        Message msg = new Message();
+                        msg.arg1=CurrentProgress;
+                        ui.sendMessage(msg);
+                    }
+                catch (InterruptedException e)
+                    {
+                        e.printStackTrace();
+                    }
+            }
+            }
+        }.start();
+        root.Delivered.setOnClickListener(new View.OnClickListener()
         {
-            exp.printStackTrace();
-        }
+            @Override
+            public void onClick(View v)
+            {
+                try{
+                    waitForResponse.StopSelf();
+                    root.Bar.setVisibility(View.INVISIBLE);
+                    root.Final.setVisibility(View.VISIBLE);
+                    root.FinalMessage.setText("We Wish you a delicious meal\n if you want send us your feedback at the rates");
+                }catch (Exception exp)
+                {
+                    exp.printStackTrace();
+                }
 
-
+            }
+        });
+        root.Done.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
     }
     private void getDataFromCloud()
     {
@@ -81,40 +128,24 @@ public class WaitingActivity extends AppCompatActivity {
             }
         });
     }
-    public class ProgressBar extends AsyncTask<Void,Void,Void>
+    public class ChangeUI extends Handler
     {
         @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-        }
-
-        @Override
-        protected void onPostExecute(Void aVoid) {
-            super.onPostExecute(aVoid);
-        }
-
-        @Override
-        protected void onProgressUpdate(Void... values) {
-            super.onProgressUpdate(values);
-            root.progressBar5.setProgress(CurrentProgress);
-            root.Time.setText("Remaining "+(60-CurrentProgress)+" m");
-        }
-        @Override
-        protected Void doInBackground(Void... voids) {
-            while(CurrentProgress<60)
-            {
-                try {
-                    Thread.sleep(1000*60);
-                    CurrentProgress++;
-                    publishProgress();
-
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
-            }
-            return null;
+        public void handleMessage(@NonNull Message msg) {
+            super.handleMessage(msg);
+            root.Time.setText("Remaining "+(60-msg.arg1)+" m");
+            root.progressBar5.setProgress(msg.arg1);
         }
     }
 
+    @Override
+    public void onServiceConnected(ComponentName name, IBinder service) {
+            forBound = (WaitForResponse.ForBound) service;
+            waitForResponse = forBound.getServiceInstance();
+    }
+
+    @Override
+    public void onServiceDisconnected(ComponentName name) {
+
+    }
 }

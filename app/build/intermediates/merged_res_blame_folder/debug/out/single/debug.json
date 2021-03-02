@@ -236,6 +236,10 @@
         "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\activity_main_app.xml"
     },
     {
+        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_delivery_truck.xml.flat",
+        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\drawable\\ic_delivery_truck.xml"
+    },
+    {
         "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_background2.xml.flat",
         "source": "D:\\Recently - Copy\\app\\src\\main\\res\\drawable\\background2.xml"
     },

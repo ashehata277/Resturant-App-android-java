@@ -4,8 +4,10 @@ package com.example.recently.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.RatingBar;
 import android.widget.TableLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -20,6 +22,21 @@ import java.lang.String;
 public final class ActivityWaitingBinding implements ViewBinding {
   @NonNull
   private final ConstraintLayout rootView;
+
+  @NonNull
+  public final LinearLayout Bar;
+
+  @NonNull
+  public final ImageView Delivered;
+
+  @NonNull
+  public final TextView Done;
+
+  @NonNull
+  public final LinearLayout Final;
+
+  @NonNull
+  public final TextView FinalMessage;
 
   @NonNull
   public final TextView PhoneText;
@@ -40,10 +57,10 @@ public final class ActivityWaitingBinding implements ViewBinding {
   public final ConstraintLayout linearLayout6;
 
   @NonNull
-  public final LinearLayout linearLayout8;
+  public final ProgressBar progressBar5;
 
   @NonNull
-  public final ProgressBar progressBar5;
+  public final RatingBar ratingBar;
 
   @NonNull
   public final TableLayout tableLayout;
@@ -66,22 +83,28 @@ public final class ActivityWaitingBinding implements ViewBinding {
   @NonNull
   public final TextView textView3;
 
-  private ActivityWaitingBinding(@NonNull ConstraintLayout rootView, @NonNull TextView PhoneText,
-      @NonNull TextView PriceText, @NonNull TextView Time, @NonNull TextView TimeText,
-      @NonNull TextView Working, @NonNull ConstraintLayout linearLayout6,
-      @NonNull LinearLayout linearLayout8, @NonNull ProgressBar progressBar5,
-      @NonNull TableLayout tableLayout, @NonNull TextView textView11, @NonNull TextView textView12,
-      @NonNull TextView textView13, @NonNull TextView textView15, @NonNull TextView textView17,
-      @NonNull TextView textView3) {
+  private ActivityWaitingBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout Bar,
+      @NonNull ImageView Delivered, @NonNull TextView Done, @NonNull LinearLayout Final,
+      @NonNull TextView FinalMessage, @NonNull TextView PhoneText, @NonNull TextView PriceText,
+      @NonNull TextView Time, @NonNull TextView TimeText, @NonNull TextView Working,
+      @NonNull ConstraintLayout linearLayout6, @NonNull ProgressBar progressBar5,
+      @NonNull RatingBar ratingBar, @NonNull TableLayout tableLayout, @NonNull TextView textView11,
+      @NonNull TextView textView12, @NonNull TextView textView13, @NonNull TextView textView15,
+      @NonNull TextView textView17, @NonNull TextView textView3) {
     this.rootView = rootView;
+    this.Bar = Bar;
+    this.Delivered = Delivered;
+    this.Done = Done;
+    this.Final = Final;
+    this.FinalMessage = FinalMessage;
     this.PhoneText = PhoneText;
     this.PriceText = PriceText;
     this.Time = Time;
     this.TimeText = TimeText;
     this.Working = Working;
     this.linearLayout6 = linearLayout6;
-    this.linearLayout8 = linearLayout8;
     this.progressBar5 = progressBar5;
+    this.ratingBar = ratingBar;
     this.tableLayout = tableLayout;
     this.textView11 = textView11;
     this.textView12 = textView12;
@@ -118,6 +141,36 @@ public final class ActivityWaitingBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.Bar;
+      LinearLayout Bar = rootView.findViewById(id);
+      if (Bar == null) {
+        break missingId;
+      }
+
+      id = R.id.Delivered;
+      ImageView Delivered = rootView.findViewById(id);
+      if (Delivered == null) {
+        break missingId;
+      }
+
+      id = R.id.Done;
+      TextView Done = rootView.findViewById(id);
+      if (Done == null) {
+        break missingId;
+      }
+
+      id = R.id.Final;
+      LinearLayout Final = rootView.findViewById(id);
+      if (Final == null) {
+        break missingId;
+      }
+
+      id = R.id.FinalMessage;
+      TextView FinalMessage = rootView.findViewById(id);
+      if (FinalMessage == null) {
+        break missingId;
+      }
+
       id = R.id.PhoneText;
       TextView PhoneText = rootView.findViewById(id);
       if (PhoneText == null) {
@@ -150,15 +203,15 @@ public final class ActivityWaitingBinding implements ViewBinding {
 
       ConstraintLayout linearLayout6 = (ConstraintLayout) rootView;
 
-      id = R.id.linearLayout8;
-      LinearLayout linearLayout8 = rootView.findViewById(id);
-      if (linearLayout8 == null) {
-        break missingId;
-      }
-
       id = R.id.progressBar5;
       ProgressBar progressBar5 = rootView.findViewById(id);
       if (progressBar5 == null) {
+        break missingId;
+      }
+
+      id = R.id.ratingBar;
+      RatingBar ratingBar = rootView.findViewById(id);
+      if (ratingBar == null) {
         break missingId;
       }
 
@@ -204,9 +257,10 @@ public final class ActivityWaitingBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityWaitingBinding((ConstraintLayout) rootView, PhoneText, PriceText, Time,
-          TimeText, Working, linearLayout6, linearLayout8, progressBar5, tableLayout, textView11,
-          textView12, textView13, textView15, textView17, textView3);
+      return new ActivityWaitingBinding((ConstraintLayout) rootView, Bar, Delivered, Done, Final,
+          FinalMessage, PhoneText, PriceText, Time, TimeText, Working, linearLayout6, progressBar5,
+          ratingBar, tableLayout, textView11, textView12, textView13, textView15, textView17,
+          textView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

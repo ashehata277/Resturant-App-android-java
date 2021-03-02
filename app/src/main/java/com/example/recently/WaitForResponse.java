@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
+import android.os.Binder;
 import android.os.IBinder;
 import android.util.Log;
 
@@ -26,12 +27,29 @@ public class WaitForResponse extends Service {
     private String OrderCode;
     private Intent content;
     private PendingIntent notification;
+    private ForBound forBound = new ForBound();
+    private int i;
     public WaitForResponse()
     {
+
     }
+
+    public void StopSelf()
+    {
+        WaitForResponse.this.stopSelf(i);
+
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
+
     @Override
     public int onStartCommand(Intent intent, int flags, int startId)
     {
+        i=startId;
+        Log.e("Service","Stopped"+startId);
         OrderCode = intent.getStringExtra("OrderCode");
         startForeground(1,ShowNotification("Order Accepted","Congratulation, Your order is Accepted\n we will arrive to you in max 1 hour"));
        try{
@@ -41,12 +59,12 @@ public class WaitForResponse extends Service {
         {
             exp.printStackTrace();
         }
-        return START_STICKY;
+        return START_NOT_STICKY;
     }
     @Override
     public IBinder onBind(Intent intent) {
         // TODO: Return the communication channel to the service.
-        throw new UnsupportedOperationException("Not yet implemented");
+        return forBound;
     }
     public Notification ShowNotification(String title,String Message)
     {
@@ -56,7 +74,7 @@ public class WaitForResponse extends Service {
         notification= PendingIntent.getActivity(WaitForResponse.this,0,content, PendingIntent.FLAG_UPDATE_CURRENT);
         noti =(NotificationManager)this.getSystemService(Context.NOTIFICATION_SERVICE);
         createNotificationChannel("Order","Order","Order",noti);
-         builder = new NotificationCompat.Builder(WaitForResponse.this,"Order")
+        builder = new NotificationCompat.Builder(WaitForResponse.this,"Order")
                 .setContentTitle(title)
                 .setContentText("About your Order")
                 .setSmallIcon(R.drawable.ic_lunch_box)
@@ -66,7 +84,7 @@ public class WaitForResponse extends Service {
                 .setProgress(60,CurrentProgress,false)
                 .setStyle(new NotificationCompat.BigTextStyle()
                         .bigText(Message));
-         builder.setNotificationSilent();
+        builder.setNotificationSilent();
         builder.setAutoCancel(false);
         noti.cancel(1);
         noti.notify(1,builder.build());
@@ -121,6 +139,13 @@ public class WaitForResponse extends Service {
                 }
             }
             return null;
+        }
+    }
+   public class  ForBound extends Binder
+    {
+        public WaitForResponse getServiceInstance()
+        {
+            return WaitForResponse.this;
         }
     }
 }

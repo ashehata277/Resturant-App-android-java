@@ -24,6 +24,7 @@ import static android.app.Notification.VISIBILITY_PRIVATE;
 import static android.app.Notification.VISIBILITY_PUBLIC;
 
 public class RecieverBroadCast extends BroadcastReceiver {
+
     @Override
     public void onReceive(Context context, Intent intent) {
         if(intent.getAction().equals("android.intent.action.OrderReciever"))

@@ -2336,6 +2336,7 @@ drawable ic_baseline_person_outline_24
 drawable ic_baseline_restaurant_menu_24
 drawable ic_baseline_shopping_cart_24
 drawable ic_baseline_warning_24
+drawable ic_delivery_truck
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_lunch_box
@@ -2382,10 +2383,15 @@ drawable updatebackground
 id ALT
 id BOTTOM_END
 id BOTTOM_START
+id Bar
 id CTRL
 id Containerfragment
 id DeleteImage
+id Delivered
+id Done
 id FUNCTION
+id Final
+id FinalMessage
 id Login
 id META
 id NO_DEBUG
@@ -2650,7 +2656,6 @@ id linearLayout4
 id linearLayout5
 id linearLayout6
 id linearLayout7
-id linearLayout8
 id listMode
 id list_item
 id logincard
@@ -2755,6 +2760,7 @@ id progressBar5
 id progress_circular
 id progress_horizontal
 id radio
+id ratingBar
 id ratio
 id rectangles
 id remember
@@ -3336,6 +3342,7 @@ string send_the_order
 string sign_up
 string status_bar_notification_info_overflow
 string sure_to_order
+string textview
 string the_cart
 string the_order
 string total
