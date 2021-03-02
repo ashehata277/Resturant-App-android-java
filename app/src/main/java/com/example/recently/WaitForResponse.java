@@ -25,6 +25,7 @@ public class WaitForResponse extends Service {
     private UpdateBar updateBar=new UpdateBar();
     private String OrderCode;
     private Intent content;
+    private PendingIntent notification;
     public WaitForResponse()
     {
     }
@@ -50,10 +51,9 @@ public class WaitForResponse extends Service {
     public Notification ShowNotification(String title,String Message)
     {
         content =new Intent(WaitForResponse.this,WaitingActivity.class);
-        Log.i("CurrentProgress",""+CurrentProgress);
         content.putExtra("CurrentProgress",String.valueOf(CurrentProgress));
         content.putExtra("OrderCode",OrderCode);
-        PendingIntent notification = PendingIntent.getActivity(WaitForResponse.this,0,content, 0);
+        notification= PendingIntent.getActivity(WaitForResponse.this,0,content, PendingIntent.FLAG_UPDATE_CURRENT);
         noti =(NotificationManager)this.getSystemService(Context.NOTIFICATION_SERVICE);
         createNotificationChannel("Order","Order","Order",noti);
          builder = new NotificationCompat.Builder(WaitForResponse.this,"Order")
@@ -101,7 +101,10 @@ public class WaitForResponse extends Service {
         @Override
         protected void onProgressUpdate(Void... values) {
             super.onProgressUpdate(values);
+            content =new Intent(WaitForResponse.this,WaitingActivity.class);
             content.putExtra("CurrentProgress",String.valueOf(CurrentProgress));
+            content.putExtra("OrderCode",OrderCode);
+            notification= PendingIntent.getActivity(WaitForResponse.this,0,content, PendingIntent.FLAG_UPDATE_CURRENT);
             builder.setProgress(60,CurrentProgress,false);
             noti.notify(1,builder.build());
         }

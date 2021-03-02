@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\menitem.xml",
+        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\menitem.xml"
+    },
+    {
+        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\fragment_profile.xml",
+        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+    },
+    {
+        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\carditem.xml",
+        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\carditem.xml"
+    },
+    {
+        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\registerdialog.xml",
+        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\registerdialog.xml"
+    },
+    {
+        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_main_app.xml",
+        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\activity_main_app.xml"
+    },
+    {
+        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\registration.xml",
+        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\registration.xml"
+    },
+    {
+        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_card.xml",
+        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\activity_card.xml"
+    },
+    {
+        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\fragment_menu.xml",
+        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\fragment_menu.xml"
+    },
+    {
+        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\activity_update_data.xml",
+        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\activity_update_data.xml"
+    },
+    {
+        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\stripped.dir\\layout\\fragment_offer.xml",
+        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\fragment_offer.xml"
+    }
+]
