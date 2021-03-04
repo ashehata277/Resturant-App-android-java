@@ -4,6 +4,10 @@
         "source": "D:\\Recently - Copy\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mapbutton.xml.flat",
+        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\drawable\\mapbutton.xml"
+    },
+    {
         "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_person_24.xml.flat",
         "source": "D:\\Recently - Copy\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
     },
@@ -176,6 +180,10 @@
         "source": "D:\\Recently - Copy\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
+        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_location.xml.flat",
+        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\activity_location.xml"
+    },
+    {
         "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_exit_to_app_24.xml.flat",
         "source": "D:\\Recently - Copy\\app\\src\\main\\res\\drawable\\ic_baseline_exit_to_app_24.xml"
     },
@@ -184,12 +192,12 @@
         "source": "D:\\Recently - Copy\\app\\src\\main\\res\\drawable\\cardback.xml"
     },
     {
-        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
-    },
-    {
         "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_baseline_lock_open_24.xml.flat",
         "source": "D:\\Recently - Copy\\app\\src\\main\\res\\drawable\\ic_baseline_lock_open_24.xml"
+    },
+    {
+        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
         "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_update_data.xml.flat",

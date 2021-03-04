@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-54:12
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-77:12
+INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-77:12
+INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-77:12
+INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-77:12
 MERGED from [androidx.databinding:viewbinding:4.1.2] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\7f4000f2a83c208f6e9571fd5125248c\jetified-viewbinding-4.1.2\AndroidManifest.xml:17:1-22:12
 MERGED from [com.firebaseui:firebase-ui-auth:6.4.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\dd0d050c7912f8b3178982b03386de61\jetified-firebase-ui-auth-6.4.0\AndroidManifest.xml:2:1-109:12
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\5cdc1e5dadc61a7f834fac4c956aa1d5\material-1.2.1\AndroidManifest.xml:17:1-24:12
@@ -14,6 +14,7 @@ MERGED from [com.google.firebase:firebase-auth:20.0.2] C:\Users\dell\.gradle\cac
 MERGED from [com.google.firebase:firebase-database:19.6.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\f820e3cdf5524f5905c0bd0b836c9605\jetified-firebase-database-19.6.0\AndroidManifest.xml:15:1-38:12
 MERGED from [com.google.firebase:firebase-storage:19.2.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\4fe024a2b334d8544f8eaa9cab7ed523\jetified-firebase-storage-19.2.1\AndroidManifest.xml:15:1-39:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\9467dea77a5cea6c22f80debdbcfbe43\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:17:1-38:12
 MERGED from [com.intuit.sdp:sdp-android:1.0.6] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\7eb782ccc7247050f2654e1aa2675caf\jetified-sdp-android-1.0.6\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\93ba1559ca25628f804ef4d1713a2060\jetified-volley-1.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.android.gms:play-services-auth:19.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\9cf98b671ee200feb557ad91ef9a3579\jetified-play-services-auth-19.0.0\AndroidManifest.xml:17:1-40:12
@@ -88,33 +89,37 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.1.0] C:\Users\dell\.gr
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\7bb25a4f6f211f0fd403b91af1b9692f\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\a5ff18c5cc9b30774e8a197dc12d7cbf\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\1f6b045666a31134b82a56c243bf4255\jetified-annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
-INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-54:12
-INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-54:12
+INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-77:12
+INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-77:12
+INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-77:12
 	package
 		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:3:5-35
 		INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml
 		INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-54:12
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-77:12
 		INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-54:12
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:1-77:12
 		INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:10:22-76
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:5:5-80
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:5:22-77
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:11:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:6:5-81
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:6:22-78
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:12:22-78
 uses-permission#android.permission.INTERNET
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:7:5-67
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:13:5-67
 MERGED from [com.firebaseui:firebase-ui-auth:6.4.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\dd0d050c7912f8b3178982b03386de61\jetified-firebase-ui-auth-6.4.0\AndroidManifest.xml:13:5-67
 MERGED from [com.firebaseui:firebase-ui-auth:6.4.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\dd0d050c7912f8b3178982b03386de61\jetified-firebase-ui-auth-6.4.0\AndroidManifest.xml:13:5-67
 MERGED from [com.google.firebase:firebase-auth:20.0.2] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\7dda96e319b6648d7ec29f3c0eb96bbb\jetified-firebase-auth-20.0.2\AndroidManifest.xml:23:5-67
@@ -123,6 +128,8 @@ MERGED from [com.google.firebase:firebase-database:19.6.0] C:\Users\dell\.gradle
 MERGED from [com.google.firebase:firebase-database:19.6.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\f820e3cdf5524f5905c0bd0b836c9605\jetified-firebase-database-19.6.0\AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-storage:19.2.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\4fe024a2b334d8544f8eaa9cab7ed523\jetified-firebase-storage-19.2.1\AndroidManifest.xml:27:5-67
 MERGED from [com.google.firebase:firebase-storage:19.2.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\4fe024a2b334d8544f8eaa9cab7ed523\jetified-firebase-storage-19.2.1\AndroidManifest.xml:27:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\05fc7cd6728c298b7927d252382ef60b\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:26:5-67
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\05fc7cd6728c298b7927d252382ef60b\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:26:5-67
 MERGED from [com.google.firebase:firebase-iid:21.0.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\383aa1c6dda89a7addaff92e18dbcae5\jetified-firebase-iid-21.0.1\AndroidManifest.xml:23:5-67
@@ -140,17 +147,17 @@ MERGED from [com.google.android.gms:play-services-measurement-impl:18.0.2] C:\Us
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.2] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\a9fe74ae9672b0421c50b173386824e1\jetified-play-services-measurement-sdk-api-18.0.2\AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-measurement-sdk-api:18.0.2] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\a9fe74ae9672b0421c50b173386824e1\jetified-play-services-measurement-sdk-api-18.0.2\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:7:22-64
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:13:22-64
 uses-permission#android.permission.CAMERA
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:8:5-65
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:14:5-65
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:8:22-62
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:14:22-62
 uses-permission#android.permission.FOREGROUND_SERVICE
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:9:5-77
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:15:5-77
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:9:22-74
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:15:22-74
 application
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:11:5-52:19
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:18:5-75:19
 MERGED from [com.firebaseui:firebase-ui-auth:6.4.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\dd0d050c7912f8b3178982b03386de61\jetified-firebase-ui-auth-6.4.0\AndroidManifest.xml:15:5-107:19
 MERGED from [com.firebaseui:firebase-ui-auth:6.4.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\dd0d050c7912f8b3178982b03386de61\jetified-firebase-ui-auth-6.4.0\AndroidManifest.xml:15:5-107:19
 MERGED from [com.google.android.material:material:1.2.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\5cdc1e5dadc61a7f834fac4c956aa1d5\material-1.2.1\AndroidManifest.xml:22:5-20
@@ -163,6 +170,8 @@ MERGED from [com.google.firebase:firebase-database:19.6.0] C:\Users\dell\.gradle
 MERGED from [com.google.firebase:firebase-database:19.6.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\f820e3cdf5524f5905c0bd0b836c9605\jetified-firebase-database-19.6.0\AndroidManifest.xml:28:5-36:19
 MERGED from [com.google.firebase:firebase-storage:19.2.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\4fe024a2b334d8544f8eaa9cab7ed523\jetified-firebase-storage-19.2.1\AndroidManifest.xml:29:5-37:19
 MERGED from [com.google.firebase:firebase-storage:19.2.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\4fe024a2b334d8544f8eaa9cab7ed523\jetified-firebase-storage-19.2.1\AndroidManifest.xml:29:5-37:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:30:5-36:19
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\93ba1559ca25628f804ef4d1713a2060\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\93ba1559ca25628f804ef4d1713a2060\jetified-volley-1.1.1\AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services-auth:19.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\9cf98b671ee200feb557ad91ef9a3579\jetified-play-services-auth-19.0.0\AndroidManifest.xml:22:5-38:19
@@ -222,87 +231,99 @@ MERGED from [com.google.android.datatransport:transport-runtime:2.2.5] C:\Users\
 MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\7f380c3d0d9744cf81d7f42a0eeffd50\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\7f380c3d0d9744cf81d7f42a0eeffd50\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
 	android:screenOrientation
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:16:9-45
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:23:9-45
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.3.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\f3d364c4591b4da0386e5d8846d9d728\core-1.3.1\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:17:9-36
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:24:9-36
 	android:label
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:21:9-41
 	android:roundIcon
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:15:9-54
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:22:9-54
 	android:icon
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:13:9-43
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:20:9-43
 	android:allowBackup
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:12:9-35
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:19:9-35
 	android:theme
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:18:9-46
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:25:9-46
 	android:usesCleartextTraffic
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:19:9-44
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:26:9-44
+meta-data#com.google.android.geo.API_KEY
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:36:9-38:55
+	android:value
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:38:13-52
+	android:name
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:37:13-58
+activity#com.example.recently.Location
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:40:9-42:72
+	android:label
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:42:13-60
+	android:name
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:41:13-37
 activity#com.example.recently.WaitingActivity
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:20:9-62
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:43:9-53
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:20:19-50
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:43:19-50
 service#com.example.recently.WaitForResponse
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:22:9-25:39
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:45:9-48:39
 	android:enabled
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:24:13-35
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:47:13-35
 	android:exported
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:25:13-36
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:48:13-36
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:23:13-44
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:46:13-44
 receiver#com.example.recently.RecieverBroadCast
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:27:9-34:20
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:50:9-57:20
 	android:enabled
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:29:13-35
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:52:13-35
 	android:exported
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:30:13-36
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:53:13-36
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:28:13-46
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:51:13-46
 intent-filter#action:name:android.intent.action.OrderReciever
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:31:13-33:29
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:54:13-56:29
 action#android.intent.action.OrderReciever
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:32:17-78
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:55:17-78
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:32:25-75
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:55:25-75
 activity#com.example.recently.Order
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:36:9-43
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:59:9-43
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:36:19-40
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:59:19-40
 activity#com.example.recently.Card
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:37:9-42
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:60:9-42
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:37:19-39
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:60:19-39
 activity#com.example.recently.MainAppActivity
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:38:9-53
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:61:9-53
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:38:19-50
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:61:19-50
 activity#com.example.recently.UpdateData
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:39:9-48
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:62:9-48
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:39:19-45
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:62:19-45
 activity#com.example.recently.Registration
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:40:9-42:58
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:63:9-65:58
 	android:parentActivityName
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:42:13-55
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:65:13-55
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:41:13-41
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:64:13-41
 activity#com.example.recently.MainActivity
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:43:9-51:20
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:66:9-74:20
 	android:showOnLockScreen
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:45:13-44
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:68:13-44
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:44:13-41
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:67:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:46:13-50:29
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:69:13-73:29
 action#android.intent.action.MAIN
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:47:17-69
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:70:17-69
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:47:25-66
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:70:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:49:17-77
+ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:72:17-77
 	android:name
-		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:49:27-74
+		ADDED from D:\Recently - Copy\app\src\main\AndroidManifest.xml:72:27-74
 uses-sdk
 INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\Recently - Copy\app\src\main\AndroidManifest.xml
@@ -327,6 +348,8 @@ MERGED from [com.google.firebase:firebase-storage:19.2.1] C:\Users\dell\.gradle\
 MERGED from [com.google.firebase:firebase-storage:19.2.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\4fe024a2b334d8544f8eaa9cab7ed523\jetified-firebase-storage-19.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\9467dea77a5cea6c22f80debdbcfbe43\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\9467dea77a5cea6c22f80debdbcfbe43\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.intuit.sdp:sdp-android:1.0.6] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\7eb782ccc7247050f2654e1aa2675caf\jetified-sdp-android-1.0.6\AndroidManifest.xml:7:5-9:41
 MERGED from [com.intuit.sdp:sdp-android:1.0.6] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\7eb782ccc7247050f2654e1aa2675caf\jetified-sdp-android-1.0.6\AndroidManifest.xml:7:5-9:41
 MERGED from [com.android.volley:volley:1.1.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\93ba1559ca25628f804ef4d1713a2060\jetified-volley-1.1.1\AndroidManifest.xml:7:5-43
@@ -493,6 +516,8 @@ MERGED from [com.google.firebase:firebase-database:19.6.0] C:\Users\dell\.gradle
 MERGED from [com.google.firebase:firebase-database:19.6.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\f820e3cdf5524f5905c0bd0b836c9605\jetified-firebase-database-19.6.0\AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-storage:19.2.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\4fe024a2b334d8544f8eaa9cab7ed523\jetified-firebase-storage-19.2.1\AndroidManifest.xml:26:5-79
 MERGED from [com.google.firebase:firebase-storage:19.2.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\4fe024a2b334d8544f8eaa9cab7ed523\jetified-firebase-storage-19.2.1\AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:23:5-79
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\05fc7cd6728c298b7927d252382ef60b\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\05fc7cd6728c298b7927d252382ef60b\jetified-transport-backend-cct-2.3.3\AndroidManifest.xml:25:5-79
 MERGED from [com.google.firebase:firebase-iid:21.0.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\383aa1c6dda89a7addaff92e18dbcae5\jetified-firebase-iid-21.0.1\AndroidManifest.xml:22:5-79
@@ -779,6 +804,18 @@ ADDED from [com.google.firebase:firebase-storage:19.2.1] C:\Users\dell\.gradle\c
 		ADDED from [com.google.firebase:firebase-storage:19.2.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\4fe024a2b334d8544f8eaa9cab7ed523\jetified-firebase-storage-19.2.1\AndroidManifest.xml:35:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-storage:19.2.1] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\4fe024a2b334d8544f8eaa9cab7ed523\jetified-firebase-storage-19.2.1\AndroidManifest.xml:34:17-107
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:17.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\8584395d637b6ec6e70bcbc794772af4\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
 ADDED from [com.google.android.gms:play-services-auth:19.0.0] C:\Users\dell\.gradle\caches\transforms-2\files-2.1\9cf98b671ee200feb557ad91ef9a3579\jetified-play-services-auth-19.0.0\AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents

@@ -24,6 +24,10 @@
         "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\menitem.xml"
     },
     {
+        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_location.xml",
+        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\activity_location.xml"
+    },
+    {
         "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_card.xml",
         "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\activity_card.xml"
     },

@@ -45,7 +45,7 @@ public class Card extends AppCompatActivity {
         SendOrder.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Card.this,Order.class));
+                startActivity(new Intent(Card.this,Location.class));
                 finish();
             }
         });

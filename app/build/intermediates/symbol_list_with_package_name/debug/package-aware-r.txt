@@ -90,6 +90,7 @@ attr allowStacking
 attr alpha
 attr alphabeticModifiers
 attr altSrc
+attr ambientEnabled
 attr animate_relativeTo
 attr animationMode
 attr appBarLayoutStyle
@@ -166,6 +167,13 @@ attr buttonStyle
 attr buttonStyleSmall
 attr buttonTint
 attr buttonTintMode
+attr cameraBearing
+attr cameraMaxZoomPreference
+attr cameraMinZoomPreference
+attr cameraTargetLat
+attr cameraTargetLng
+attr cameraTilt
+attr cameraZoom
 attr cardBackgroundColor
 attr cardCornerRadius
 attr cardElevation
@@ -477,6 +485,10 @@ attr labelBehavior
 attr labelStyle
 attr labelVisibilityMode
 attr lastBaselineToBottomHeight
+attr latLngBoundsNorthEastLatitude
+attr latLngBoundsNorthEastLongitude
+attr latLngBoundsSouthWestLatitude
+attr latLngBoundsSouthWestLongitude
 attr layout
 attr layoutDescription
 attr layoutDuringTransition
@@ -562,8 +574,10 @@ attr listPreferredItemPaddingEnd
 attr listPreferredItemPaddingLeft
 attr listPreferredItemPaddingRight
 attr listPreferredItemPaddingStart
+attr liteMode
 attr logo
 attr logoDescription
+attr mapType
 attr materialAlertDialogBodyTextStyle
 attr materialAlertDialogTheme
 attr materialAlertDialogTitleIconStyle
@@ -881,8 +895,17 @@ attr triggerId
 attr triggerReceiver
 attr triggerSlack
 attr ttcIndex
+attr uiCompass
+attr uiMapToolbar
+attr uiRotateGestures
+attr uiScrollGestures
+attr uiScrollGesturesDuringRotateOrZoom
+attr uiTiltGestures
+attr uiZoomControls
+attr uiZoomGestures
 attr useCompatPadding
 attr useMaterialThemeColors
+attr useViewLifecycle
 attr values
 attr verticalOffset
 attr viewInflaterClass
@@ -907,6 +930,7 @@ attr windowNoTitle
 attr yearSelectedStyle
 attr yearStyle
 attr yearTodayStyle
+attr zOrderOnTop
 bool abc_action_bar_embed_tabs
 bool abc_allow_stacked_button_bar
 bool abc_config_actionMenuItemAllCaps
@@ -2346,6 +2370,7 @@ drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable layoutbackground
 drawable logo
+drawable mapbutton
 drawable material_ic_calendar_black_24dp
 drawable material_ic_clear_black_24dp
 drawable material_ic_edit_black_24dp
@@ -2534,6 +2559,7 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id confirm
 id confirm_button
 id confirmation_code
 id confirmation_code_layout
@@ -2626,6 +2652,7 @@ id home
 id homeAsUp
 id honorRequest
 id horizontal
+id hybrid
 id icon
 id icon_group
 id icon_only
@@ -2658,12 +2685,14 @@ id linearLayout6
 id linearLayout7
 id listMode
 id list_item
+id location
 id logincard
 id logo
 id logout
 id mailprofile
 id mailregistration
 id main_tos_and_pp
+id map
 id masked
 id meats
 id media_actions
@@ -2773,6 +2802,7 @@ id right_side
 id root
 id rounded
 id row_index_key
+id satellite
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -2843,6 +2873,7 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id terrain
 id test_checkbox_android_button_tint
 id test_checkbox_app_button_tint
 id test_radiobutton_android_button_tint
@@ -2982,6 +3013,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_card
+layout activity_location
 layout activity_main
 layout activity_main_app
 layout activity_order
@@ -3165,6 +3197,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string confirm
 string default_web_client_id
 string description
 string email
@@ -3276,6 +3309,7 @@ string gcm_defaultSenderId
 string google_api_key
 string google_app_id
 string google_crash_reporting_api_key
+string google_maps_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
@@ -3345,6 +3379,7 @@ string sure_to_order
 string textview
 string the_cart
 string the_order
+string title_activity_location
 string total
 string total_price_for_your_order
 string update
@@ -4172,6 +4207,7 @@ styleable LinearLayoutCompat android_gravity android_orientation android_baselin
 styleable LinearLayoutCompat_Layout android_layout_gravity android_layout_width android_layout_height android_layout_weight
 styleable ListPopupWindow android_dropDownHorizontalOffset android_dropDownVerticalOffset
 styleable LoadingImageView circleCrop imageAspectRatio imageAspectRatioAdjust
+styleable MapAttrs ambientEnabled cameraBearing cameraMaxZoomPreference cameraMinZoomPreference cameraTargetLat cameraTargetLng cameraTilt cameraZoom latLngBoundsNorthEastLatitude latLngBoundsNorthEastLongitude latLngBoundsSouthWestLatitude latLngBoundsSouthWestLongitude liteMode mapType uiCompass uiMapToolbar uiRotateGestures uiScrollGestures uiScrollGesturesDuringRotateOrZoom uiTiltGestures uiZoomControls uiZoomGestures useViewLifecycle zOrderOnTop
 styleable MaterialAlertDialog backgroundInsetBottom backgroundInsetEnd backgroundInsetStart backgroundInsetTop
 styleable MaterialAlertDialogTheme materialAlertDialogBodyTextStyle materialAlertDialogTheme materialAlertDialogTitleIconStyle materialAlertDialogTitlePanelStyle materialAlertDialogTitleTextStyle
 styleable MaterialAutoCompleteTextView android_inputType

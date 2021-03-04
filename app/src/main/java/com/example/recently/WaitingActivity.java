@@ -18,6 +18,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 
 import com.example.recently.databinding.ActivityWaitingBinding;
+import com.google.android.gms.maps.model.LatLng;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -43,6 +44,8 @@ public class WaitingActivity extends AppCompatActivity implements ServiceConnect
     private Long Price;
     private WaitForResponse.ForBound forBound;
     private WaitForResponse waitForResponse;
+    private double latitude=0.00;
+    private double longitude=0.00;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -117,9 +120,12 @@ public class WaitingActivity extends AppCompatActivity implements ServiceConnect
                 OrderDate=String.valueOf(snapshot.child("OrderDate").getValue());
                 Phone = String.valueOf(snapshot.child("phone").getValue());
                 Price = (Long) snapshot.child("Total Price").getValue();
+                latitude=(double)snapshot.child("Location").child("latitude").getValue();
+                longitude=(double)snapshot.child("Location").child("longitude").getValue();
                 root.PhoneText.setText(Phone);
                 root.TimeText.setText(OrderDate);
                 root.PriceText.setText(Price+"  L.E");
+                root.location.setText(latitude+":"+longitude+"");
             }
 
             @Override

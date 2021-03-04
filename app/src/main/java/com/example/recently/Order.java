@@ -122,6 +122,7 @@ public class Order extends AppCompatActivity {
                 info.put("Accepted","Waiting for Response");
                 info.put("Total Price",Totalall);
                 info.put("OrderDate",FinalDate);
+                info.put("Location",Location.getLocation());
                 editor.putString("OrderCode",OrderCode);
                 editor.putString("Accepted","false");
                 editor.putString("Total price",String.valueOf(Totalall));

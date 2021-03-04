@@ -44,6 +44,8 @@ com/example/recently/Order.java
  com.example.recently.Order$Adapter
 com/example/recently/databinding/FragmentProfileBinding.java
  com.example.recently.databinding.FragmentProfileBinding
+com/example/recently/databinding/ActivityLocationBinding.java
+ com.example.recently.databinding.ActivityLocationBinding
 com/example/recently/Card.java
  com.example.recently.Card
  com.example.recently.Card$1
@@ -96,19 +98,14 @@ com/example/recently/MainActivity.java
  com.example.recently.MainActivity$4
 com/example/recently/databinding/MenitemBinding.java
  com.example.recently.databinding.MenitemBinding
-com/example/recently/WaitForResponse.java
- com.example.recently.WaitForResponse
- com.example.recently.WaitForResponse$ForBound
- com.example.recently.WaitForResponse$UpdateBar
+com/example/recently/Location.java
+ com.example.recently.Location
+ com.example.recently.Location$1
+ com.example.recently.Location$2
 com/example/recently/databinding/RegisterdialogBinding.java
  com.example.recently.databinding.RegisterdialogBinding
-com/example/recently/WaitingActivity.java
- com.example.recently.WaitingActivity
- com.example.recently.WaitingActivity$1
- com.example.recently.WaitingActivity$2
- com.example.recently.WaitingActivity$3
- com.example.recently.WaitingActivity$4
- com.example.recently.WaitingActivity$ChangeUI
+com/example/recently/databinding/ActivityWaitingBinding.java
+ com.example.recently.databinding.ActivityWaitingBinding
 com/example/recently/databinding/ActivityMainBinding.java
  com.example.recently.databinding.ActivityMainBinding
 com/example/recently/profileFragment.java
@@ -119,5 +116,14 @@ com/example/recently/profileFragment.java
  com.example.recently.profileFragment$4
 com/example/recently/BuildConfig.java
  com.example.recently.BuildConfig
-com/example/recently/databinding/ActivityWaitingBinding.java
- com.example.recently.databinding.ActivityWaitingBinding
+com/example/recently/WaitForResponse.java
+ com.example.recently.WaitForResponse
+ com.example.recently.WaitForResponse$ForBound
+ com.example.recently.WaitForResponse$UpdateBar
+com/example/recently/WaitingActivity.java
+ com.example.recently.WaitingActivity
+ com.example.recently.WaitingActivity$1
+ com.example.recently.WaitingActivity$2
+ com.example.recently.WaitingActivity$3
+ com.example.recently.WaitingActivity$4
+ com.example.recently.WaitingActivity$ChangeUI
