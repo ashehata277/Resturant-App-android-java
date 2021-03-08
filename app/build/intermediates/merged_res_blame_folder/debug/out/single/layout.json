@@ -1,62 +1,62 @@
 [
     {
-        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_offer.xml",
-        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\fragment_offer.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_card.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/activity_card.xml"
     },
     {
-        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_update_data.xml",
-        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\activity_update_data.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/registration.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/registration.xml"
     },
     {
-        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_order.xml",
-        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\activity_order.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_update_data.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/activity_update_data.xml"
     },
     {
-        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_waiting.xml",
-        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\activity_waiting.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/carditem.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/carditem.xml"
     },
     {
-        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_profile.xml",
-        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\fragment_profile.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_order.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/activity_order.xml"
     },
     {
-        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\menitem.xml",
-        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\menitem.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_waiting.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/activity_waiting.xml"
     },
     {
-        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_location.xml",
-        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\activity_location.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main_app.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/activity_main_app.xml"
     },
     {
-        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_card.xml",
-        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\activity_card.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/menitem.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/menitem.xml"
     },
     {
-        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main_app.xml",
-        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\activity_main_app.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_menu.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/fragment_menu.xml"
     },
     {
-        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_location.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/activity_location.xml"
     },
     {
-        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\carditem.xml",
-        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\carditem.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_profile.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/fragment_profile.xml"
     },
     {
-        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\orderitem.xml",
-        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\orderitem.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/orderitem.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/orderitem.xml"
     },
     {
-        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\registration.xml",
-        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\registration.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_offer.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/fragment_offer.xml"
     },
     {
-        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_menu.xml",
-        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\fragment_menu.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/activity_main.xml"
     },
     {
-        "merged": "D:\\Recently - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\registerdialog.xml",
-        "source": "D:\\Recently - Copy\\app\\src\\main\\res\\layout\\registerdialog.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/registerdialog.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/registerdialog.xml"
     }
 ]

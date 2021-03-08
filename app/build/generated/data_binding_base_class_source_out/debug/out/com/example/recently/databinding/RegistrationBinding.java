@@ -13,7 +13,6 @@ import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.example.recently.R;
-import com.google.android.gms.common.SignInButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -44,9 +43,6 @@ public final class RegistrationBinding implements ViewBinding {
   public final EditText phonenumber;
 
   @NonNull
-  public final SignInButton signInButton;
-
-  @NonNull
   public final ImageView userimage;
 
   @NonNull
@@ -55,8 +51,8 @@ public final class RegistrationBinding implements ViewBinding {
   private RegistrationBinding(@NonNull ConstraintLayout rootView, @NonNull TextView Register,
       @NonNull CardView card, @NonNull CardView cardView, @NonNull EditText mailregistration,
       @NonNull EditText password2registration, @NonNull EditText passwordregistration,
-      @NonNull EditText phonenumber, @NonNull SignInButton signInButton,
-      @NonNull ImageView userimage, @NonNull EditText usernameregitration) {
+      @NonNull EditText phonenumber, @NonNull ImageView userimage,
+      @NonNull EditText usernameregitration) {
     this.rootView = rootView;
     this.Register = Register;
     this.card = card;
@@ -65,7 +61,6 @@ public final class RegistrationBinding implements ViewBinding {
     this.password2registration = password2registration;
     this.passwordregistration = passwordregistration;
     this.phonenumber = phonenumber;
-    this.signInButton = signInButton;
     this.userimage = userimage;
     this.usernameregitration = usernameregitration;
   }
@@ -139,12 +134,6 @@ public final class RegistrationBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.sign_in_button;
-      SignInButton signInButton = rootView.findViewById(id);
-      if (signInButton == null) {
-        break missingId;
-      }
-
       id = R.id.userimage;
       ImageView userimage = rootView.findViewById(id);
       if (userimage == null) {
@@ -158,8 +147,8 @@ public final class RegistrationBinding implements ViewBinding {
       }
 
       return new RegistrationBinding((ConstraintLayout) rootView, Register, card, cardView,
-          mailregistration, password2registration, passwordregistration, phonenumber, signInButton,
-          userimage, usernameregitration);
+          mailregistration, password2registration, passwordregistration, phonenumber, userimage,
+          usernameregitration);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

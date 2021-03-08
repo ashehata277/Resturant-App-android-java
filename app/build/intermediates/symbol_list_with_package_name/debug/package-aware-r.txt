@@ -2344,6 +2344,7 @@ drawable fui_idp_button_background_twitter
 drawable fui_idp_button_background_yahoo
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable googlesignback
 drawable ic_baseline_add_shopping_cart_24
 drawable ic_baseline_alternate_email_24
 drawable ic_baseline_cloud_done_24
@@ -2832,9 +2833,9 @@ id shortcut
 id showCustom
 id showHome
 id showTitle
-id sign_in_button
 id sign_in_email_sent_header_text
 id sign_in_email_sent_text
+id signinwithgmail
 id sin
 id skipCollapsed
 id slide

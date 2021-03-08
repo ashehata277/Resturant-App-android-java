@@ -67,6 +67,8 @@ import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Registration extends AppCompatActivity {
     RegistrationBinding root;
@@ -81,14 +83,11 @@ public class Registration extends AppCompatActivity {
     private AlertDialog.Builder builder1 ;
     private AlertDialog.Builder builder2 ;
     private Boolean imagecheck=false;
-    private GoogleSignInClient mGoogleSignInClient;
-    private GoogleSignInOptions gso;
-    private int RC_SIGN_IN=10;
     private String imageencoded;
     private ProgressDialog waiting;
     private Uri image;
     private StorageReference reference;
-    private FirebaseAuth mAuth;
+
     private boolean uploaded=false;
     private  DatabaseReference rootref;
     private SimpleDateFormat format;
@@ -105,14 +104,6 @@ public class Registration extends AppCompatActivity {
                 AddAvater();
             }
         });
-        root.signInButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                signIn();
-
-                //sign with google and get mail and write it in the username text
-            }
-        });
         root.Register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -121,8 +112,10 @@ public class Registration extends AppCompatActivity {
                 password2=root.password2registration.getText().toString().trim();
                 phoneString=root.phonenumber.getText().toString().trim();
                 mail=root.mailregistration.getText().toString().trim();
+                Boolean isVaild = EmailValid(mail);
+                Boolean isValid_0=PhoneValid(phoneString);
                 if(!TextUtils.isEmpty(username) && !TextUtils.isEmpty(mail)&& ! TextUtils.isEmpty(password1)
-                && !TextUtils.isEmpty(password2) && !TextUtils.isEmpty(phoneString) && password1.equals(password2))
+                && !TextUtils.isEmpty(password2) && !TextUtils.isEmpty(phoneString) && password1.equals(password2) && isVaild && isValid_0)
                 {
 
                     phone = Long.parseLong(phoneString);
@@ -188,6 +181,25 @@ public class Registration extends AppCompatActivity {
             }
         });
     }
+    public Boolean EmailValid (String mail)
+    {
+        //this function to test the mail is written in correct shape or not
+        String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\."+
+                "[a-zA-Z0-9_+&*-]+)*@" +
+                "(?:[a-zA-Z0-9-]+\\.)+[a-z" +
+                "A-Z]{2,7}$";
+        Pattern pat = Pattern.compile(emailRegex);
+        if (mail == null)
+            return false;
+        return pat.matcher(mail).matches();
+    }
+    public Boolean PhoneValid (String phone)
+    {
+        // this function to test the phone number is written in correct shape or not
+        Pattern p = Pattern.compile("(01)[0-9]{9}");
+        Matcher m = p.matcher(phone);
+        return (m.find() && m.group().equals(phone));
+    }
     public void init()
     {
         rootref = FirebaseDatabase.getInstance().getReference();
@@ -196,20 +208,11 @@ public class Registration extends AppCompatActivity {
         reference= FirebaseStorage.getInstance().getReference();
         builder1=new AlertDialog.Builder(this);
         builder2=new AlertDialog.Builder(this);
-        root.mailregistration.setEnabled(false);
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestIdToken(getString(R.string.default_web_client_id)).requestEmail().build();
-        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-        root.signInButton.setSize(SignInButton.SIZE_STANDARD);
         waiting=new ProgressDialog(this);
         waiting.setMessage("we are Doing Registration");
-        mAuth = FirebaseAuth.getInstance();
         format =new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS", Locale.getDefault());
     }
-    private void signIn()
-    {
-        Intent signInIntent = mGoogleSignInClient.getSignInIntent();
-        startActivityForResult(signInIntent, RC_SIGN_IN);
-    }
+
     public void AddAvater()
     {
         Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
@@ -221,12 +224,6 @@ public class Registration extends AppCompatActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-
-        if(requestCode==RC_SIGN_IN && resultCode==RESULT_OK )
-        {
-            Task<GoogleSignInAccount> task = GoogleSignIn.getSignedInAccountFromIntent(data);
-            handleSignInResult(task);
-        }
         if(requestCode==100 && resultCode==RESULT_OK)
         {
              image = data.getData();
@@ -245,42 +242,6 @@ public class Registration extends AppCompatActivity {
             }
             //need to decode the image to string and undecode
         }
-    }
-    private void handleSignInResult(Task<GoogleSignInAccount> completedTask) {
-        try {
-            GoogleSignInAccount account = completedTask.getResult(ApiException.class);
-
-            //root.mailregistration.setEnabled(true); // we should make enable to this after get google mail
-            // Signed in successfully, show authenticated UI.
-            root.mailregistration.setText(account.getEmail());
-            root.usernameregitration.setText(account.getDisplayName());
-            Firebase_Authentication(account.getIdToken(),account.getDisplayName());
-        }
-        catch (ApiException e)
-        {
-            // The ApiException status code indicates the detailed failure reason.
-            // Please refer to the GoogleSignInStatusCodes class reference for more information.
-            //Log.w(TAG"", "signInResult:failed code=" + e.getStatusCode());
-            e.printStackTrace();
-        }
-    }
-    private void Firebase_Authentication(String idToken,String name)
-    {
-        AuthCredential credential = GoogleAuthProvider.getCredential(idToken, null);
-        mAuth.signInWithCredential(credential)
-                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if (task.isSuccessful()) {
-                            // Sign in success, update UI with the signed-in user's information
-                            Log.d("TAG", "signInWithCredential:success");
-                            FirebaseUser user = mAuth.getCurrentUser();
-                        } else {
-                            // If sign in fails, display a message to the user.
-                            Log.w("TAG", "signInWithCredential:failure", task.getException());
-                        }
-                    }
-                });
     }
     public String encodeImage(Bitmap image)
     {

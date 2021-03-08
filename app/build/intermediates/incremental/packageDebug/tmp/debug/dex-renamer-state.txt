@@ -1,7 +1,7 @@
-#Thu Mar 04 16:29:01 EET 2021
-base.0=D\:\\Recently - Copy\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
+#Mon Mar 08 17:18:43 EET 2021
+base.0=/media/shehata/New Volume/Recently - Copy/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
-base.1=D\:\\Recently - Copy\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
+base.1=/media/shehata/New Volume/Recently - Copy/app/build/intermediates/dex/debug/mergeProjectDexDebug/classes.dex

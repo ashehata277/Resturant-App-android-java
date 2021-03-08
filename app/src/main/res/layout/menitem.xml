@@ -31,7 +31,7 @@
         android:gravity="start"
         android:text="TextView"
         android:textColor="@color/design_default_color_error"
-        android:textSize="@dimen/_25sdp"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/addtocard"

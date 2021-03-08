@@ -53,13 +53,17 @@ public final class ActivityMainBinding implements ViewBinding {
   public final AppCompatCheckBox remember;
 
   @NonNull
+  public final TextView signinwithgmail;
+
+  @NonNull
   public final TextView username;
 
   private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull TextView Login,
       @NonNull EditText PlainPassword, @NonNull EditText PlainUsername, @NonNull TextView Signup,
       @NonNull CardView Signupcard, @NonNull LinearLayout linearLayout,
       @NonNull LinearLayout linearLayout2, @NonNull CardView logincard, @NonNull TextView password,
-      @NonNull AppCompatCheckBox remember, @NonNull TextView username) {
+      @NonNull AppCompatCheckBox remember, @NonNull TextView signinwithgmail,
+      @NonNull TextView username) {
     this.rootView = rootView;
     this.Login = Login;
     this.PlainPassword = PlainPassword;
@@ -71,6 +75,7 @@ public final class ActivityMainBinding implements ViewBinding {
     this.logincard = logincard;
     this.password = password;
     this.remember = remember;
+    this.signinwithgmail = signinwithgmail;
     this.username = username;
   }
 
@@ -161,6 +166,12 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.signinwithgmail;
+      TextView signinwithgmail = rootView.findViewById(id);
+      if (signinwithgmail == null) {
+        break missingId;
+      }
+
       id = R.id.username;
       TextView username = rootView.findViewById(id);
       if (username == null) {
@@ -169,7 +180,7 @@ public final class ActivityMainBinding implements ViewBinding {
 
       return new ActivityMainBinding((ConstraintLayout) rootView, Login, PlainPassword,
           PlainUsername, Signup, Signupcard, linearLayout, linearLayout2, logincard, password,
-          remember, username);
+          remember, signinwithgmail, username);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

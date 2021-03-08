@@ -47,6 +47,7 @@ public class Location extends FragmentActivity implements OnMapReadyCallback {
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
         mMap.getUiSettings().setZoomControlsEnabled(true);
+        mMap.getUiSettings().setMyLocationButtonEnabled(true);
         mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
         LatLng sydney = new LatLng( 27.253630, 33.813305 ) ;
         mMap.addMarker(new MarkerOptions().
