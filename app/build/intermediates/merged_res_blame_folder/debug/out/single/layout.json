@@ -40,6 +40,10 @@
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/activity_location.xml"
     },
     {
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_splash.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_profile.xml",
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/fragment_profile.xml"
     },

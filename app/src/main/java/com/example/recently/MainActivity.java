@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
     private ProgressDialog dialog;
     private AlertDialog.Builder builder1 ;
     private int CAMERA_PERMISSION_REQUEST_CODE = 400;
+    private int EXTERNAL_PERMISSION_REQUEST_CODE= 404;
     private AlertDialog.Builder builder2 ;
     private DatabaseReference rootref;
     private boolean frommainapp=true;
@@ -87,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
         //check permissions to access Storage
         CheckPermissions(Manifest.permission.INTERNET,STORAGE_PERMISSION_REQUEST_CODE);
         CheckPermissions(Manifest.permission.CAMERA,CAMERA_PERMISSION_REQUEST_CODE);
+        CheckPermissions(Manifest.permission.READ_EXTERNAL_STORAGE,EXTERNAL_PERMISSION_REQUEST_CODE);
         init();
         root.signinwithgmail.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -153,6 +155,17 @@ public class MainActivity extends AppCompatActivity {
                 //Toast.makeText(this,"Storage Permission Denied",Toast.LENGTH_LONG).show();
             }
         }
+        if(requestCode==EXTERNAL_PERMISSION_REQUEST_CODE)
+        {
+            if(grantResults.length>0 && grantResults[0]==PackageManager.PERMISSION_GRANTED)
+            {
+                //Toast.makeText(this,"Storage Permission Granted",Toast.LENGTH_LONG).show();
+            }
+            else
+            {
+                //Toast.makeText(this,"Storage Permission Denied",Toast.LENGTH_LONG).show();
+            }
+        }
         if(requestCode==CAMERA_PERMISSION_REQUEST_CODE)
         {
             if(grantResults.length>0 && grantResults[0]==PackageManager.PERMISSION_GRANTED)
@@ -176,13 +189,11 @@ public class MainActivity extends AppCompatActivity {
         builder2=new AlertDialog.Builder(this);
         phoneString="";
         password="";
-        if(!preferences.getString("username","N/A").equals("N/A") && !preferences.getString("password","N/A").equals("N/A"))
+        //this part of code need to optimize, we can make this task with on condition
+        if(!preferences.getString("username","N/A").equals("N/A") && !preferences.getString("password","N/A").equals("N/A") && !preferences.getString("password","N/A").isEmpty() && !preferences.getString("username","N/A").isEmpty())
         {
             phoneString = preferences.getString("phoneString","N/A");
             password =preferences.getString("password","N/A");
-        }
-        if(!phoneString.equals("N/A") && !password.equals("N/A") && !TextUtils.isEmpty(phoneString) && !TextUtils.isEmpty(password))
-        {
             root.PlainUsername.setText(phoneString);
             root.PlainPassword.setText(password);
             if(frommainapp)
@@ -190,6 +201,15 @@ public class MainActivity extends AppCompatActivity {
                 Login();
             }
         }
+        /*if(!phoneString.equals("N/A") && !password.equals("N/A") && !TextUtils.isEmpty(phoneString) && !TextUtils.isEmpty(password))
+        {
+            root.PlainUsername.setText(phoneString);
+            root.PlainPassword.setText(password);
+            if(frommainapp)
+            {
+                Login();
+            }
+        }*/
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestIdToken(getString(R.string.default_web_client_id)).requestEmail().build();
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
         mAuth = FirebaseAuth.getInstance();

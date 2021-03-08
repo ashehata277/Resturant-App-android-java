@@ -60,16 +60,20 @@
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/drawable/ic_delivery_truck.xml"
     },
     {
-        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/drawable_ic_lunch_box.xml.flat",
-        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/drawable/ic_lunch_box.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/layout_activity_splash.xml.flat",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/activity_splash.xml"
+    },
+    {
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/layout_registerdialog.xml.flat",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/registerdialog.xml"
     },
     {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/layout_fragment_menu.xml.flat",
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/fragment_menu.xml"
     },
     {
-        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/layout_registerdialog.xml.flat",
-        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/registerdialog.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/drawable_ic_lunch_box.xml.flat",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/drawable/ic_lunch_box.xml"
     },
     {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/drawable_ic_baseline_departure_board_24.xml.flat",
@@ -170,6 +174,10 @@
     {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/drawable_ic_baseline_delete_24.xml.flat",
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/drawable/ic_baseline_delete_24.xml"
+    },
+    {
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/anim_splash.xml.flat",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/anim/splash.xml"
     },
     {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",

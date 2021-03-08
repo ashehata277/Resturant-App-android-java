@@ -32,6 +32,7 @@ anim fui_slide_out_left
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
+anim splash
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
 animator design_fab_show_motion_spec
@@ -3018,6 +3019,7 @@ layout activity_location
 layout activity_main
 layout activity_main_app
 layout activity_order
+layout activity_splash
 layout activity_update_data
 layout activity_waiting
 layout browser_actions_context_menu_page
