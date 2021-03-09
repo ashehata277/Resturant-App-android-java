@@ -3,19 +3,43 @@ com/example/recently/RecieverBroadCast.java
  com.example.recently.RecieverBroadCast$1
 com/example/recently/databinding/ActivityUpdateDataBinding.java
  com.example.recently.databinding.ActivityUpdateDataBinding
-com/example/recently/WaitingActivity.java
- com.example.recently.WaitingActivity
- com.example.recently.WaitingActivity$1
- com.example.recently.WaitingActivity$2
- com.example.recently.WaitingActivity$3
- com.example.recently.WaitingActivity$4
- com.example.recently.WaitingActivity$ChangeUI
-com/example/recently/databinding/RegisterdialogBinding.java
- com.example.recently.databinding.RegisterdialogBinding
-com/example/recently/databinding/ActivityMainBinding.java
- com.example.recently.databinding.ActivityMainBinding
-com/example/recently/databinding/ActivityWaitingBinding.java
- com.example.recently.databinding.ActivityWaitingBinding
+com/example/recently/Registration.java
+ com.example.recently.Registration
+ com.example.recently.Registration$1
+ com.example.recently.Registration$2
+ com.example.recently.Registration$2$1
+ com.example.recently.Registration$2$2
+ com.example.recently.Registration$2$3
+ com.example.recently.Registration$2$4
+ com.example.recently.Registration$3
+ com.example.recently.Registration$4
+ com.example.recently.Registration$5
+ com.example.recently.Registration$6
+com/example/recently/UpdateData.java
+ com.example.recently.UpdateData
+ com.example.recently.UpdateData$1
+ com.example.recently.UpdateData$2
+ com.example.recently.UpdateData$2$1
+ com.example.recently.UpdateData$2$2
+ com.example.recently.UpdateData$3
+ com.example.recently.UpdateData$4
+ com.example.recently.UpdateData$5
+ com.example.recently.UpdateData$6
+ com.example.recently.UpdateData$7
+com/example/recently/Location.java
+ com.example.recently.Location
+ com.example.recently.Location$1
+ com.example.recently.Location$2
+com/example/recently/Order.java
+ com.example.recently.Order
+ com.example.recently.Order$1
+ com.example.recently.Order$1$1
+ com.example.recently.Order$2
+ com.example.recently.Order$3
+ com.example.recently.Order$3$1
+ com.example.recently.Order$3$2
+ com.example.recently.Order$3$3
+ com.example.recently.Order$Adapter
 com/example/recently/databinding/FragmentProfileBinding.java
  com.example.recently.databinding.FragmentProfileBinding
 com/example/recently/databinding/ActivityLocationBinding.java
@@ -46,8 +70,8 @@ com/example/recently/MenuFragment.java
  com.example.recently.MenuFragment$Adapter$1
 com/example/recently/CheckInternetConnection.java
  com.example.recently.CheckInternetConnection
-com/example/recently/offerFragment.java
- com.example.recently.offerFragment
+com/example/recently/databinding/ActivityWaitingBinding.java
+ com.example.recently.databinding.ActivityWaitingBinding
 com/example/recently/AuthenticatePhonenumber.java
  com.example.recently.AuthenticatePhonenumber
  com.example.recently.AuthenticatePhonenumber$1
@@ -57,6 +81,12 @@ com/example/recently/databinding/ActivityMainAppBinding.java
  com.example.recently.databinding.ActivityMainAppBinding
 com/example/recently/databinding/CarditemBinding.java
  com.example.recently.databinding.CarditemBinding
+com/example/recently/profileFragment.java
+ com.example.recently.profileFragment
+ com.example.recently.profileFragment$1
+ com.example.recently.profileFragment$2
+ com.example.recently.profileFragment$3
+ com.example.recently.profileFragment$4
 com/example/recently/databinding/ActivityCardBinding.java
  com.example.recently.databinding.ActivityCardBinding
 com/example/recently/databinding/ActivityOrderBinding.java
@@ -69,30 +99,6 @@ com/example/recently/databinding/FragmentOfferBinding.java
  com.example.recently.databinding.FragmentOfferBinding
 com/example/recently/BuildConfig.java
  com.example.recently.BuildConfig
-com/example/recently/Location.java
- com.example.recently.Location
- com.example.recently.Location$1
- com.example.recently.Location$2
-com/example/recently/databinding/MenitemBinding.java
- com.example.recently.databinding.MenitemBinding
-com/example/recently/WaitForResponse.java
- com.example.recently.WaitForResponse
- com.example.recently.WaitForResponse$ForBound
- com.example.recently.WaitForResponse$UpdateBar
-com/example/recently/MainAppActivity.java
- com.example.recently.MainAppActivity
- com.example.recently.MainAppActivity$1
- com.example.recently.MainAppActivity$2
-com/example/recently/Order.java
- com.example.recently.Order
- com.example.recently.Order$1
- com.example.recently.Order$1$1
- com.example.recently.Order$2
- com.example.recently.Order$3
- com.example.recently.Order$3$1
- com.example.recently.Order$3$2
- com.example.recently.Order$3$3
- com.example.recently.Order$Adapter
 com/example/recently/MainActivity.java
  com.example.recently.MainActivity
  com.example.recently.MainActivity$1
@@ -106,32 +112,35 @@ com/example/recently/Splash.java
  com.example.recently.Splash
  com.example.recently.Splash$1
  com.example.recently.Splash$2
-com/example/recently/profileFragment.java
- com.example.recently.profileFragment
- com.example.recently.profileFragment$1
- com.example.recently.profileFragment$2
- com.example.recently.profileFragment$3
- com.example.recently.profileFragment$4
-com/example/recently/Registration.java
- com.example.recently.Registration
- com.example.recently.Registration$1
- com.example.recently.Registration$2
- com.example.recently.Registration$2$1
- com.example.recently.Registration$2$2
- com.example.recently.Registration$2$3
- com.example.recently.Registration$2$4
- com.example.recently.Registration$3
- com.example.recently.Registration$4
- com.example.recently.Registration$5
- com.example.recently.Registration$6
-com/example/recently/UpdateData.java
- com.example.recently.UpdateData
- com.example.recently.UpdateData$1
- com.example.recently.UpdateData$2
- com.example.recently.UpdateData$2$1
- com.example.recently.UpdateData$2$2
- com.example.recently.UpdateData$3
- com.example.recently.UpdateData$4
- com.example.recently.UpdateData$5
- com.example.recently.UpdateData$6
- com.example.recently.UpdateData$7
+com/example/recently/databinding/MenitemBinding.java
+ com.example.recently.databinding.MenitemBinding
+com/example/recently/WaitForResponse.java
+ com.example.recently.WaitForResponse
+ com.example.recently.WaitForResponse$ForBound
+ com.example.recently.WaitForResponse$UpdateBar
+com/example/recently/databinding/RegisterdialogBinding.java
+ com.example.recently.databinding.RegisterdialogBinding
+com/example/recently/WaitingActivity.java
+ com.example.recently.WaitingActivity
+ com.example.recently.WaitingActivity$1
+ com.example.recently.WaitingActivity$2
+ com.example.recently.WaitingActivity$3
+ com.example.recently.WaitingActivity$4
+ com.example.recently.WaitingActivity$ChangeUI
+com/example/recently/databinding/OfferitemBinding.java
+ com.example.recently.databinding.OfferitemBinding
+com/example/recently/databinding/ActivityMainBinding.java
+ com.example.recently.databinding.ActivityMainBinding
+com/example/recently/MainAppActivity.java
+ com.example.recently.MainAppActivity
+ com.example.recently.MainAppActivity$1
+ com.example.recently.MainAppActivity$2
+com/example/recently/offeritem.java
+ com.example.recently.offeritem
+com/example/recently/offerFragment.java
+ com.example.recently.offerFragment
+ com.example.recently.offerFragment$1
+com/example/recently/RecycleViewAdapter.java
+ com.example.recently.RecycleViewAdapter
+ com.example.recently.RecycleViewAdapter$1
+ com.example.recently.RecycleViewAdapter$viewHolder

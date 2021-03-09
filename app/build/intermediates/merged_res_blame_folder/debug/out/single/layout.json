@@ -24,6 +24,10 @@
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/activity_waiting.xml"
     },
     {
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/offeritem.xml",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/offeritem.xml"
+    },
+    {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main_app.xml",
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/activity_main_app.xml"
     },

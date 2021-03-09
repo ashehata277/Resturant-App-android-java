@@ -2402,6 +2402,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable offeritemback
 drawable test_custom_background
 drawable textviewbackground
 drawable tooltip_frame_dark
@@ -2427,6 +2428,7 @@ id PhoneText
 id PlainPassword
 id PlainUsername
 id PriceText
+id RecycleView
 id Register
 id SHIFT
 id SHOW_ALL
@@ -2508,6 +2510,7 @@ id animateToEnd
 id animateToStart
 id anonymous_button
 id appbar
+id appbar0
 id apple_signin_button
 id asConfigured
 id async
@@ -2561,6 +2564,7 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id collapsingtoolbar
 id confirm
 id confirm_button
 id confirmation_code
@@ -2748,6 +2752,8 @@ id number
 id off
 id offer
 id offerfragment
+id offerimage
+id offertext
 id on
 id orderitemname
 id orderitemname2
@@ -3115,6 +3121,7 @@ layout notification_template_media
 layout notification_template_media_custom
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout offeritem
 layout orderitem
 layout registerdialog
 layout registration
