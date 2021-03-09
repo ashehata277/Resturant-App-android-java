@@ -1,12 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".offerFragment"
     android:id="@+id/offerfragment"
     android:background="@drawable/background2">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar0"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#00570A53"
+        tools:ignore="MissingConstraints">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingtoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:fitsSystemWindows="true"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed|snap"
+            app:title="@string/app_name">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:src="@drawable/buttonback2" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="175dp"
+                android:gravity="center"
+                android:text="Resturant Name"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20dp"
+                android:background="@color/purple_500"/>
 
-
-
-</FrameLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecycleView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -40,12 +40,12 @@
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/drawable/cardback.xml"
     },
     {
-        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/layout_orderitem.xml.flat",
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/orderitem.xml"
+    },
+    {
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/drawable_ic_baseline_person_24.xml.flat",
@@ -64,16 +64,20 @@
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/activity_splash.xml"
     },
     {
-        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/layout_registerdialog.xml.flat",
-        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/registerdialog.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/layout_offeritem.xml.flat",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/offeritem.xml"
+    },
+    {
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/drawable_ic_lunch_box.xml.flat",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/drawable/ic_lunch_box.xml"
     },
     {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/layout_fragment_menu.xml.flat",
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/fragment_menu.xml"
     },
     {
-        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/drawable_ic_lunch_box.xml.flat",
-        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/drawable/ic_lunch_box.xml"
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/layout_registerdialog.xml.flat",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/registerdialog.xml"
     },
     {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/drawable_ic_baseline_departure_board_24.xml.flat",
@@ -214,6 +218,10 @@
     {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/drawable_ic_baseline_person_242.xml.flat",
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/drawable/ic_baseline_person_242.xml"
+    },
+    {
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/drawable_offeritemback.xml.flat",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/drawable/offeritemback.xml"
     },
     {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/layout_fragment_profile.xml.flat",

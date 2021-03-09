@@ -4,29 +4,53 @@ package com.example.recently.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import com.example.recently.R;
+import com.google.android.material.appbar.AppBarLayout;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class FragmentOfferBinding implements ViewBinding {
   @NonNull
-  private final FrameLayout rootView;
+  private final CoordinatorLayout rootView;
 
   @NonNull
-  public final FrameLayout offerfragment;
+  public final RecyclerView RecycleView;
 
-  private FragmentOfferBinding(@NonNull FrameLayout rootView, @NonNull FrameLayout offerfragment) {
+  @NonNull
+  public final AppBarLayout appbar0;
+
+  @NonNull
+  public final CollapsingToolbarLayout collapsingtoolbar;
+
+  @NonNull
+  public final AppCompatImageView header;
+
+  @NonNull
+  public final CoordinatorLayout offerfragment;
+
+  private FragmentOfferBinding(@NonNull CoordinatorLayout rootView,
+      @NonNull RecyclerView RecycleView, @NonNull AppBarLayout appbar0,
+      @NonNull CollapsingToolbarLayout collapsingtoolbar, @NonNull AppCompatImageView header,
+      @NonNull CoordinatorLayout offerfragment) {
     this.rootView = rootView;
+    this.RecycleView = RecycleView;
+    this.appbar0 = appbar0;
+    this.collapsingtoolbar = collapsingtoolbar;
+    this.header = header;
     this.offerfragment = offerfragment;
   }
 
   @Override
   @NonNull
-  public FrameLayout getRoot() {
+  public CoordinatorLayout getRoot() {
     return rootView;
   }
 
@@ -47,12 +71,40 @@ public final class FragmentOfferBinding implements ViewBinding {
 
   @NonNull
   public static FragmentOfferBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.RecycleView;
+      RecyclerView RecycleView = rootView.findViewById(id);
+      if (RecycleView == null) {
+        break missingId;
+      }
+
+      id = R.id.appbar0;
+      AppBarLayout appbar0 = rootView.findViewById(id);
+      if (appbar0 == null) {
+        break missingId;
+      }
+
+      id = R.id.collapsingtoolbar;
+      CollapsingToolbarLayout collapsingtoolbar = rootView.findViewById(id);
+      if (collapsingtoolbar == null) {
+        break missingId;
+      }
+
+      id = R.id.header;
+      AppCompatImageView header = rootView.findViewById(id);
+      if (header == null) {
+        break missingId;
+      }
+
+      CoordinatorLayout offerfragment = (CoordinatorLayout) rootView;
+
+      return new FragmentOfferBinding((CoordinatorLayout) rootView, RecycleView, appbar0,
+          collapsingtoolbar, header, offerfragment);
     }
-
-    FrameLayout offerfragment = (FrameLayout) rootView;
-
-    return new FragmentOfferBinding((FrameLayout) rootView, offerfragment);
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }
