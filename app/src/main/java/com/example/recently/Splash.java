@@ -20,6 +20,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Splash extends AppCompatActivity {
     private ActivitySplashBinding root;
     private SharedPreferences preferences;
@@ -79,26 +82,21 @@ public class Splash extends AppCompatActivity {
         rootref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.child("Users").child(phoneString).getKey().equals(phoneString))
+                if(snapshot.child("Users").child(phoneString).getKey().equals(phoneString)
+                && snapshot.child("Users").child(phoneString).child("password").getValue().toString().equals(password))
                 {
-                    if(snapshot.child("Users").child(phoneString).child("password").getValue().toString().equals(password))
-                    {
-                            MainActivity.fragmentphone=phoneString;
-                            startActivity(new Intent(Splash.this,MainAppActivity.class));
-                            finish();
-                    }
-                    else
-                    {
-                        startActivity(new Intent(Splash.this,MainActivity.class));
-                        finish();
-                    }
-
+                    //Suppose add condition to check if is active in another phone or not
+                   /* Map<String,Object> active = new HashMap<String,Object>();
+                    active.put("activeNow",true);
+                    rootref.child("Users").child(phoneString).updateChildren(active);*/
+                    MainActivity.fragmentphone=phoneString;
+                    startActivity(new Intent(Splash.this,MainAppActivity.class));
                 }
                 else
                 {
                     startActivity(new Intent(Splash.this,MainActivity.class));
-                    finish();
                 }
+                finish();
             }
 
             @Override

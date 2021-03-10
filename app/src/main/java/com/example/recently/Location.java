@@ -18,7 +18,7 @@ public class Location extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private Button Confirm;
-    private LatLng Location;
+    private LatLng lng;
     private static LatLng finalLocation;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,7 @@ public class Location extends FragmentActivity implements OnMapReadyCallback {
         Confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finalLocation=Location;
+                finalLocation= lng;
                 startActivity(new Intent(Location.this,Order.class));
                 finish();
             }
@@ -49,7 +49,9 @@ public class Location extends FragmentActivity implements OnMapReadyCallback {
         mMap.getUiSettings().setZoomControlsEnabled(true);
         mMap.getUiSettings().setMyLocationButtonEnabled(true);
         mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
+        //android.location.Location myLocation = mMap.getMyLocation();
         LatLng sydney = new LatLng( 27.253630, 33.813305 ) ;
+        lng=sydney;
         mMap.addMarker(new MarkerOptions().
                 position(sydney).title("Home"))
                 .showInfoWindow();
@@ -60,7 +62,7 @@ public class Location extends FragmentActivity implements OnMapReadyCallback {
             public void onMapClick(LatLng latLng) {
                 mMap.clear();
                 mMap.addMarker(new MarkerOptions().position(latLng).title("myLocation")).showInfoWindow();
-                Location = latLng;
+                lng = latLng;
             }
         });
 

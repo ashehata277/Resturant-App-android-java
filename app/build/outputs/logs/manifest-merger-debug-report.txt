@@ -156,6 +156,10 @@ uses-permission#android.permission.FOREGROUND_SERVICE
 ADDED from /media/shehata/New Volume/Recently - Copy/app/src/main/AndroidManifest.xml:14:5-77
 	android:name
 		ADDED from /media/shehata/New Volume/Recently - Copy/app/src/main/AndroidManifest.xml:14:22-74
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /media/shehata/New Volume/Recently - Copy/app/src/main/AndroidManifest.xml:16:5-81
+	android:name
+		ADDED from /media/shehata/New Volume/Recently - Copy/app/src/main/AndroidManifest.xml:16:22-78
 application
 ADDED from /media/shehata/New Volume/Recently - Copy/app/src/main/AndroidManifest.xml:17:5-74:19
 MERGED from [com.firebaseui:firebase-ui-auth:6.4.0] /home/shehata/.gradle/caches/transforms-2/files-2.1/dd0d050c7912f8b3178982b03386de61/jetified-firebase-ui-auth-6.4.0/AndroidManifest.xml:15:5-107:19

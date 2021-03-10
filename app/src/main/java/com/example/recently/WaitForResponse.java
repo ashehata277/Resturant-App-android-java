@@ -34,9 +34,9 @@ public class WaitForResponse extends Service {
 
     }
 
-    public void StopSelf()
+    public void StopSelf(int ServiceId)
     {
-        WaitForResponse.this.stopSelf(i);
+        WaitForResponse.this.stopSelf(ServiceId);
 
     }
 
@@ -49,9 +49,8 @@ public class WaitForResponse extends Service {
     public int onStartCommand(Intent intent, int flags, int startId)
     {
         i=startId;
-        Log.e("Service","Stopped"+startId);
         OrderCode = intent.getStringExtra("OrderCode");
-        startForeground(1,ShowNotification("Order Accepted","Congratulation, Your order is Accepted\n we will arrive to you in max 1 hour"));
+        startForeground(startId,ShowNotification(startId,"Order Accepted","Congratulation, Your order is Accepted\n we will arrive to you in max 1 hour"));
        try{
            updateBar.execute();
        }
@@ -66,11 +65,12 @@ public class WaitForResponse extends Service {
         // TODO: Return the communication channel to the service.
         return forBound;
     }
-    public Notification ShowNotification(String title,String Message)
+    public Notification ShowNotification(int startId,String title,String Message)
     {
         content =new Intent(WaitForResponse.this,WaitingActivity.class);
         content.putExtra("CurrentProgress",String.valueOf(CurrentProgress));
         content.putExtra("OrderCode",OrderCode);
+        content.putExtra("ServiceId",startId);
         notification= PendingIntent.getActivity(WaitForResponse.this,0,content, PendingIntent.FLAG_UPDATE_CURRENT);
         noti =(NotificationManager)this.getSystemService(Context.NOTIFICATION_SERVICE);
         createNotificationChannel("Order","Order","Order",noti);
@@ -112,7 +112,7 @@ public class WaitForResponse extends Service {
         protected void onPostExecute(Void voids) {
             super.onPostExecute(voids);
             builder.setProgress(0,0,false);
-            noti.notify(1,builder.build());
+            noti.notify(i,builder.build());
             WaitForResponse.this.stopSelf();
         }
 
@@ -124,7 +124,7 @@ public class WaitForResponse extends Service {
             content.putExtra("OrderCode",OrderCode);
             notification= PendingIntent.getActivity(WaitForResponse.this,0,content, PendingIntent.FLAG_UPDATE_CURRENT);
             builder.setProgress(60,CurrentProgress,false);
-            noti.notify(1,builder.build());
+            noti.notify(i,builder.build());
         }
 
         @Override

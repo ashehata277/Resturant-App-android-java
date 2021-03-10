@@ -66,6 +66,8 @@ public class MainActivity extends AppCompatActivity {
     private AlertDialog.Builder builder1 ;
     private int CAMERA_PERMISSION_REQUEST_CODE = 400;
     private int EXTERNAL_PERMISSION_REQUEST_CODE= 404;
+    private int FINE_LOCATION_CODE=406;
+    private int COARSOR_LOCATION_CODE=408;
     private AlertDialog.Builder builder2 ;
     private DatabaseReference rootref;
     private boolean frommainapp=true;
@@ -89,6 +91,8 @@ public class MainActivity extends AppCompatActivity {
         CheckPermissions(Manifest.permission.INTERNET,STORAGE_PERMISSION_REQUEST_CODE);
         CheckPermissions(Manifest.permission.CAMERA,CAMERA_PERMISSION_REQUEST_CODE);
         CheckPermissions(Manifest.permission.READ_EXTERNAL_STORAGE,EXTERNAL_PERMISSION_REQUEST_CODE);
+        CheckPermissions(Manifest.permission.ACCESS_FINE_LOCATION,FINE_LOCATION_CODE);
+        CheckPermissions(Manifest.permission.ACCESS_COARSE_LOCATION,COARSOR_LOCATION_CODE);
         init();
         root.signinwithgmail.setOnClickListener(new View.OnClickListener(){
             @Override
@@ -144,6 +148,28 @@ public class MainActivity extends AppCompatActivity {
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults)
     {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if(requestCode==FINE_LOCATION_CODE)
+        {
+            if(grantResults.length>0 && grantResults[0]==PackageManager.PERMISSION_GRANTED)
+            {
+                //Toast.makeText(this,"Storage Permission Granted",Toast.LENGTH_LONG).show();
+            }
+            else
+            {
+                //Toast.makeText(this,"Storage Permission Denied",Toast.LENGTH_LONG).show();
+            }
+        }
+        if(requestCode==COARSOR_LOCATION_CODE)
+        {
+            if(grantResults.length>0 && grantResults[0]==PackageManager.PERMISSION_GRANTED)
+            {
+                //Toast.makeText(this,"Storage Permission Granted",Toast.LENGTH_LONG).show();
+            }
+            else
+            {
+                //Toast.makeText(this,"Storage Permission Denied",Toast.LENGTH_LONG).show();
+            }
+        }
          if(requestCode==STORAGE_PERMISSION_REQUEST_CODE)
         {
             if(grantResults.length>0 && grantResults[0]==PackageManager.PERMISSION_GRANTED)
@@ -222,10 +248,12 @@ public class MainActivity extends AppCompatActivity {
         rootref.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
-                if(snapshot.child("Users").child(phoneString).getKey().equals(phoneString))
+                if(snapshot.child("Users").child(phoneString).getKey().equals(phoneString)
+                && snapshot.child("Users").child(phoneString).child("password").getValue().toString().equals(password))
                 {
-                    if(snapshot.child("Users").child(phoneString).child("password").getValue().toString().equals(password))
-                    {
+                        /* Map<String,Object> active = new HashMap<String,Object>();
+                        active.put("activeNow",true);
+                        rootref.child("Users").child(phoneString).updateChildren(active);*/
                         Toast.makeText(MainActivity.this,"Logging in successed",Toast.LENGTH_LONG).show();
                         editor.putString("ImageName", snapshot.child("Users").child(phoneString).child("imagename").getValue().toString());
                         if(remeberlogindata)
@@ -240,15 +268,7 @@ public class MainActivity extends AppCompatActivity {
                         dialog.dismiss();
                         startActivity(new Intent(MainActivity.this,MainAppActivity.class));
                         finish();
-                    }
-                    else
-                    {
-                        dialog.dismiss();
-                        builder2.setMessage("Please, Check From the phone and password")
-                                .setIcon(R.drawable.ic_baseline_warning_24)
-                                .setTitle("Warning")
-                                .show();
-                    }
+
 
                 }
                 else

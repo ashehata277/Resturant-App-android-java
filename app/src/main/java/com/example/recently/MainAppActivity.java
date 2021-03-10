@@ -41,6 +41,9 @@ public class MainAppActivity extends AppCompatActivity
 
                     Intent logout = new Intent (MainAppActivity.this,MainActivity.class);
                     logout.putExtra("MainApp",false);
+                     /* Map<String,Object> active = new HashMap<String,Object>();
+                    active.put("activeNow",false);
+                    rootref.child("Users").child(phoneString).updateChildren(active);*/
                     startActivity(logout);
                     break;
                 }
