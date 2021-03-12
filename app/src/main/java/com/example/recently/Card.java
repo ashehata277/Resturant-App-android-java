@@ -147,7 +147,6 @@ public class Card extends AppCompatActivity {
                    source.remove(position);
                    adapter.notifyDataSetChanged();
                    Toast.makeText(Card.this,"The Item is Deleted",Toast.LENGTH_SHORT).show();
-
                }
            });
             return view;
