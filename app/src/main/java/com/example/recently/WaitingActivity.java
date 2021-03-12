@@ -13,6 +13,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
+import android.text.SpannableString;
+import android.text.Spanned;
+import android.text.method.LinkMovementMethod;
+import android.text.style.ClickableSpan;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -32,7 +36,6 @@ import java.util.Locale;
 
 public class WaitingActivity extends AppCompatActivity implements ServiceConnection {
     ActivityWaitingBinding root;
-    private Bundle ComeIntent;
     private String OrderCode;
     private String CurrentString;
     private int CurrentProgress=0;
@@ -110,15 +113,19 @@ public class WaitingActivity extends AppCompatActivity implements ServiceConnect
                 finish();
             }
         });
-        root.showLocation.setOnClickListener(new View.OnClickListener() {
+        SpannableString sString =  new SpannableString("Location");
+        ClickableSpan clickableSpan =  new ClickableSpan() {
             @Override
-            public void onClick(View v) {
+            public void onClick(@NonNull View widget) {
                 Intent showLocation = new Intent (WaitingActivity.this,showLocationatWaiting.class);
                 showLocation.putExtra("latitude",latitude);
                 showLocation.putExtra("longitude",longitude);
                 startActivity(showLocation);
             }
-        });
+        };
+        sString.setSpan(clickableSpan,0,8, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
+        root.showLocation.append(sString);
+        root.showLocation.setMovementMethod(LinkMovementMethod.getInstance());
     }
     private void getDataFromCloud()
     {

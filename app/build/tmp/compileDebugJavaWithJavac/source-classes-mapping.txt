@@ -125,10 +125,10 @@ com/example/recently/Order.java
  com.example.recently.Order$3$2
  com.example.recently.Order$3$3
  com.example.recently.Order$Adapter
-com/example/recently/WaitForResponse.java
- com.example.recently.WaitForResponse
- com.example.recently.WaitForResponse$ForBound
- com.example.recently.WaitForResponse$UpdateBar
+com/example/recently/Location.java
+ com.example.recently.Location
+ com.example.recently.Location$1
+ com.example.recently.Location$2
 com/example/recently/Card.java
  com.example.recently.Card
  com.example.recently.Card$1
@@ -137,6 +137,10 @@ com/example/recently/Card.java
  com.example.recently.Card$Adapter$1
  com.example.recently.Card$Adapter$2
  com.example.recently.Card$Adapter$3
+com/example/recently/WaitForResponse.java
+ com.example.recently.WaitForResponse
+ com.example.recently.WaitForResponse$ForBound
+ com.example.recently.WaitForResponse$UpdateBar
 com/example/recently/WaitingActivity.java
  com.example.recently.WaitingActivity
  com.example.recently.WaitingActivity$1
@@ -145,7 +149,3 @@ com/example/recently/WaitingActivity.java
  com.example.recently.WaitingActivity$4
  com.example.recently.WaitingActivity$5
  com.example.recently.WaitingActivity$ChangeUI
-com/example/recently/Location.java
- com.example.recently.Location
- com.example.recently.Location$1
- com.example.recently.Location$2
