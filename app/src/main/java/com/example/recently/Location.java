@@ -1,8 +1,11 @@
 package com.example.recently;
 
+import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.FragmentActivity;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -13,13 +16,14 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.tasks.Task;
 
 public class Location extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private Button Confirm;
     private LatLng lng;
-    private static LatLng finalLocation;
+    private static LatLng finalLocation;         //we make it static to can share it with the order class.
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,17 +36,15 @@ public class Location extends FragmentActivity implements OnMapReadyCallback {
         Confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finalLocation= lng;
-                startActivity(new Intent(Location.this,Order.class));
+                finalLocation = lng;
+                startActivity(new Intent(Location.this, Order.class));
                 finish();
             }
         });
     }
-    public static LatLng getLocation ()
-    {
+    public static LatLng getLocation() {
         return finalLocation;
     }
-
     @Override
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
@@ -51,7 +53,7 @@ public class Location extends FragmentActivity implements OnMapReadyCallback {
         mMap.setMapType(GoogleMap.MAP_TYPE_TERRAIN);
         //android.location.Location myLocation = mMap.getMyLocation();
         LatLng sydney = new LatLng( 27.253630, 33.813305 ) ;
-        lng=sydney;
+        lng=sydney;            //to make default location //this can resolve Bug.
         mMap.addMarker(new MarkerOptions().
                 position(sydney).title("Home"))
                 .showInfoWindow();
@@ -65,6 +67,5 @@ public class Location extends FragmentActivity implements OnMapReadyCallback {
                 lng = latLng;
             }
         });
-
     }
 }

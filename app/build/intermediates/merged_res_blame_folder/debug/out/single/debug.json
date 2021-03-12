@@ -40,12 +40,12 @@
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/drawable/cardback.xml"
     },
     {
-        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
-    },
-    {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/layout_orderitem.xml.flat",
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/orderitem.xml"
+    },
+    {
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/drawable_ic_baseline_person_24.xml.flat",
@@ -58,6 +58,10 @@
     {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/drawable_ic_delivery_truck.xml.flat",
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/drawable/ic_delivery_truck.xml"
+    },
+    {
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/layout_activity_show_locationat_waiting.xml.flat",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/activity_show_locationat_waiting.xml"
     },
     {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/layout_activity_splash.xml.flat",

@@ -34,9 +34,9 @@ public class WaitForResponse extends Service {
 
     }
 
-    public void StopSelf(int ServiceId)
+    public void StopSelf()
     {
-        WaitForResponse.this.stopSelf(ServiceId);
+        WaitForResponse.this.stopSelf();
 
     }
 
@@ -70,7 +70,6 @@ public class WaitForResponse extends Service {
         content =new Intent(WaitForResponse.this,WaitingActivity.class);
         content.putExtra("CurrentProgress",String.valueOf(CurrentProgress));
         content.putExtra("OrderCode",OrderCode);
-        content.putExtra("ServiceId",startId);
         notification= PendingIntent.getActivity(WaitForResponse.this,0,content, PendingIntent.FLAG_UPDATE_CURRENT);
         noti =(NotificationManager)this.getSystemService(Context.NOTIFICATION_SERVICE);
         createNotificationChannel("Order","Order","Order",noti);

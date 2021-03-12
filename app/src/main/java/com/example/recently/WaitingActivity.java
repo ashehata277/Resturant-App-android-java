@@ -46,7 +46,6 @@ public class WaitingActivity extends AppCompatActivity implements ServiceConnect
     private WaitForResponse waitForResponse;
     private double latitude=0.00;
     private double longitude=0.00;
-    private int ServiceId;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,7 +57,6 @@ public class WaitingActivity extends AppCompatActivity implements ServiceConnect
         Intent inner = getIntent();
         if(inner.hasExtra("OrderCode")) OrderCode=inner.getStringExtra("OrderCode");
         if (inner.hasExtra("CurrentProgress")) CurrentString=inner.getStringExtra("CurrentProgress");
-        if(inner.hasExtra("ServiceId"))  ServiceId = inner.getIntExtra("ServiceId",1);
         Log.i("Tag",OrderCode+"      "+CurrentString);
         CurrentProgress=Integer.parseInt(CurrentString);
         root.Time.setText("Remaining "+(60-CurrentProgress)+" m");
@@ -95,7 +93,7 @@ public class WaitingActivity extends AppCompatActivity implements ServiceConnect
             public void onClick(View v)
             {
                 try{
-                    waitForResponse.StopSelf(ServiceId);
+                    waitForResponse.StopSelf();
                     root.Bar.setVisibility(View.INVISIBLE);
                     root.Final.setVisibility(View.VISIBLE);
                     root.FinalMessage.setText("We Wish you a delicious meal\nif you want send us your feedback at the rates.");
@@ -110,6 +108,15 @@ public class WaitingActivity extends AppCompatActivity implements ServiceConnect
             @Override
             public void onClick(View v) {
                 finish();
+            }
+        });
+        root.showLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent showLocation = new Intent (WaitingActivity.this,showLocationatWaiting.class);
+                showLocation.putExtra("latitude",latitude);
+                showLocation.putExtra("longitude",longitude);
+                startActivity(showLocation);
             }
         });
     }

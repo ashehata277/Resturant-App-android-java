@@ -66,6 +66,9 @@ public final class ActivityWaitingBinding implements ViewBinding {
   public final RatingBar ratingBar;
 
   @NonNull
+  public final TextView showLocation;
+
+  @NonNull
   public final TableLayout tableLayout;
 
   @NonNull
@@ -92,9 +95,9 @@ public final class ActivityWaitingBinding implements ViewBinding {
       @NonNull TextView Time, @NonNull TextView TimeText, @NonNull TextView Working,
       @NonNull ConstraintLayout linearLayout6, @NonNull TextView location,
       @NonNull ProgressBar progressBar5, @NonNull RatingBar ratingBar,
-      @NonNull TableLayout tableLayout, @NonNull TextView textView11, @NonNull TextView textView12,
-      @NonNull TextView textView13, @NonNull TextView textView15, @NonNull TextView textView17,
-      @NonNull TextView textView3) {
+      @NonNull TextView showLocation, @NonNull TableLayout tableLayout,
+      @NonNull TextView textView11, @NonNull TextView textView12, @NonNull TextView textView13,
+      @NonNull TextView textView15, @NonNull TextView textView17, @NonNull TextView textView3) {
     this.rootView = rootView;
     this.Bar = Bar;
     this.Delivered = Delivered;
@@ -110,6 +113,7 @@ public final class ActivityWaitingBinding implements ViewBinding {
     this.location = location;
     this.progressBar5 = progressBar5;
     this.ratingBar = ratingBar;
+    this.showLocation = showLocation;
     this.tableLayout = tableLayout;
     this.textView11 = textView11;
     this.textView12 = textView12;
@@ -226,6 +230,12 @@ public final class ActivityWaitingBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.showLocation;
+      TextView showLocation = rootView.findViewById(id);
+      if (showLocation == null) {
+        break missingId;
+      }
+
       id = R.id.tableLayout;
       TableLayout tableLayout = rootView.findViewById(id);
       if (tableLayout == null) {
@@ -270,8 +280,8 @@ public final class ActivityWaitingBinding implements ViewBinding {
 
       return new ActivityWaitingBinding((ConstraintLayout) rootView, Bar, Delivered, Done, Final,
           FinalMessage, PhoneText, PriceText, Time, TimeText, Working, linearLayout6, location,
-          progressBar5, ratingBar, tableLayout, textView11, textView12, textView13, textView15,
-          textView17, textView3);
+          progressBar5, ratingBar, showLocation, tableLayout, textView11, textView12, textView13,
+          textView15, textView17, textView3);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

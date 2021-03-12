@@ -36,7 +36,7 @@
     <string name="textview">TextView</string>
     <string name="title_activity_location">Map</string>
     <string name="confirm">Confirm</string>
-
+    <string name="title_activity_show_locationat_waiting">Map</string>
 
 
 </resources>

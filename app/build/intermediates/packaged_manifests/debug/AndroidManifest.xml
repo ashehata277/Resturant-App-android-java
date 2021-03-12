@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="26"
         android:targetSdkVersion="30" />
+
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
          Google Maps Android API v2, but you must specify either coarse or fine
@@ -18,7 +19,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -43,7 +43,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.Recently"
         android:usesCleartextTraffic="true" >
-        <activity android:name="com.example.recently.MainActivity" />
+
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -56,6 +56,11 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
+        <activity
+            android:name="com.example.recently.showLocationatWaiting"
+            android:label="@string/title_activity_show_locationat_waiting"
+            android:parentActivityName="com.example.recently.WaitingActivity" />
+        <activity android:name="com.example.recently.MainActivity" />
         <activity
             android:name="com.example.recently.Location"
             android:label="@string/title_activity_location" />
