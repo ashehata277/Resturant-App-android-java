@@ -77,10 +77,8 @@ public class AuthenticatePhonenumber
                 }
             };
     private void verifyCode(String codeByUser) {
-
         PhoneAuthCredential credential = PhoneAuthProvider.getCredential(verificationCodeBySystem, codeByUser);
         signInTheUserByCredentials(credential);
-
     }
     private void signInTheUserByCredentials(PhoneAuthCredential credential) {
 
@@ -90,11 +88,11 @@ public class AuthenticatePhonenumber
                 .addOnCompleteListener((Activity) mContext, new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
-
                         if (task.isSuccessful())
                         {
                                 authenticated.setChecked(true);
-                        } else
+                        }
+                        else
                         {
                             Toast.makeText(mContext, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }

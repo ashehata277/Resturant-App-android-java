@@ -268,8 +268,6 @@ public class MainActivity extends AppCompatActivity {
                         dialog.dismiss();
                         startActivity(new Intent(MainActivity.this,MainAppActivity.class));
                         finish();
-
-
                 }
                 else
                 {
@@ -280,10 +278,8 @@ public class MainActivity extends AppCompatActivity {
                             .show();
                 }
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-
             }
         });
     }
