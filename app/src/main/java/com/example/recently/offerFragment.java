@@ -34,7 +34,7 @@ public class offerFragment extends Fragment
         View root = inflater.inflate(R.layout.fragment_offer, container, false);
         recyclerView = (RecyclerView) root.findViewById(R.id.RecycleView);
         recyclerView.setHasFixedSize(true);
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 2);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(getActivity(), 2); // to make View Horizontal can replace grid layout to ---->LinearLayoutManager(Context,LinearLayoutManager.Horizontal,false);
         recyclerView.setLayoutManager(gridLayoutManager);
         recycleViewAdapter = new RecycleViewAdapter(getActivity(),content);
         recyclerView.setAdapter(recycleViewAdapter);
