@@ -123,15 +123,22 @@ public class Order extends AppCompatActivity {
                 info.put("Total Price",Totalall);
                 info.put("OrderDate",FinalDate);
                 info.put("Location",Location.getLocation());
+                /*------this part not important and won't effect in the performance---------*/
                 editor.putString("OrderCode",OrderCode);
                 editor.putString("Accepted","false");
                 editor.putString("Total price",String.valueOf(Totalall));
                 editor.apply();
+                /*--------------------------End of not important part------------------------*/
                 reference=reference.child(OrderCode);
                 reference.updateChildren(info, new DatabaseReference.CompletionListener() {
                     @Override
                     public void onComplete(@Nullable DatabaseError error, @NonNull DatabaseReference ref) {
                         //Toast.makeText(Order.this,"Your order is sent",Toast.LENGTH_SHORT).show();
+
+                        //we need to optimize this part by Reorder the code. first, send the info of the order
+                        //then, wait till this information completely uploaded.
+                        //finally, send the order embedded on the information.
+                        //we can make that by get the reset of this function here.
                     }
                 });
                 DatabaseReference reference2 = FirebaseDatabase.getInstance().getReference().child("Orders").child(OrderCode).child("The order");
