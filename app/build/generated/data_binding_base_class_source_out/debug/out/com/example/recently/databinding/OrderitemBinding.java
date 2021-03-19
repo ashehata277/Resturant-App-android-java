@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.example.recently.R;
 import java.lang.NullPointerException;
@@ -16,7 +17,16 @@ import java.lang.String;
 
 public final class OrderitemBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final ConstraintLayout rootView;
+
+  @NonNull
+  public final LinearLayout linearLayout10;
+
+  @NonNull
+  public final LinearLayout linearLayout8;
+
+  @NonNull
+  public final LinearLayout linearLayout9;
 
   @NonNull
   public final TextView orderitemname;
@@ -25,24 +35,41 @@ public final class OrderitemBinding implements ViewBinding {
   public final TextView orderitemnote;
 
   @NonNull
-  public final TextView orderitemnumber;
+  public final TextView orderitemnumer;
 
   @NonNull
   public final TextView orderitemtotal;
 
-  private OrderitemBinding(@NonNull LinearLayout rootView, @NonNull TextView orderitemname,
-      @NonNull TextView orderitemnote, @NonNull TextView orderitemnumber,
-      @NonNull TextView orderitemtotal) {
+  @NonNull
+  public final TextView textView18;
+
+  @NonNull
+  public final TextView textView20;
+
+  @NonNull
+  public final TextView textview500;
+
+  private OrderitemBinding(@NonNull ConstraintLayout rootView, @NonNull LinearLayout linearLayout10,
+      @NonNull LinearLayout linearLayout8, @NonNull LinearLayout linearLayout9,
+      @NonNull TextView orderitemname, @NonNull TextView orderitemnote,
+      @NonNull TextView orderitemnumer, @NonNull TextView orderitemtotal,
+      @NonNull TextView textView18, @NonNull TextView textView20, @NonNull TextView textview500) {
     this.rootView = rootView;
+    this.linearLayout10 = linearLayout10;
+    this.linearLayout8 = linearLayout8;
+    this.linearLayout9 = linearLayout9;
     this.orderitemname = orderitemname;
     this.orderitemnote = orderitemnote;
-    this.orderitemnumber = orderitemnumber;
+    this.orderitemnumer = orderitemnumer;
     this.orderitemtotal = orderitemtotal;
+    this.textView18 = textView18;
+    this.textView20 = textView20;
+    this.textview500 = textview500;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -67,6 +94,24 @@ public final class OrderitemBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.linearLayout10;
+      LinearLayout linearLayout10 = rootView.findViewById(id);
+      if (linearLayout10 == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout8;
+      LinearLayout linearLayout8 = rootView.findViewById(id);
+      if (linearLayout8 == null) {
+        break missingId;
+      }
+
+      id = R.id.linearLayout9;
+      LinearLayout linearLayout9 = rootView.findViewById(id);
+      if (linearLayout9 == null) {
+        break missingId;
+      }
+
       id = R.id.orderitemname;
       TextView orderitemname = rootView.findViewById(id);
       if (orderitemname == null) {
@@ -79,9 +124,9 @@ public final class OrderitemBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.orderitemnumber;
-      TextView orderitemnumber = rootView.findViewById(id);
-      if (orderitemnumber == null) {
+      id = R.id.orderitemnumer;
+      TextView orderitemnumer = rootView.findViewById(id);
+      if (orderitemnumer == null) {
         break missingId;
       }
 
@@ -91,8 +136,27 @@ public final class OrderitemBinding implements ViewBinding {
         break missingId;
       }
 
-      return new OrderitemBinding((LinearLayout) rootView, orderitemname, orderitemnote,
-          orderitemnumber, orderitemtotal);
+      id = R.id.textView18;
+      TextView textView18 = rootView.findViewById(id);
+      if (textView18 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView20;
+      TextView textView20 = rootView.findViewById(id);
+      if (textView20 == null) {
+        break missingId;
+      }
+
+      id = R.id.textview500;
+      TextView textview500 = rootView.findViewById(id);
+      if (textview500 == null) {
+        break missingId;
+      }
+
+      return new OrderitemBinding((ConstraintLayout) rootView, linearLayout10, linearLayout8,
+          linearLayout9, orderitemname, orderitemnote, orderitemnumer, orderitemtotal, textView18,
+          textView20, textview500);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

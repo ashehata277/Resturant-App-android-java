@@ -152,6 +152,10 @@
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/drawable/background2.xml"
     },
     {
+        "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/drawable_orderitemback.xml.flat",
+        "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/drawable/orderitemback.xml"
+    },
+    {
         "merged": "/media/shehata/New Volume/Recently - Copy/app/build/intermediates/res/merged/debug/layout_menitem.xml.flat",
         "source": "/media/shehata/New Volume/Recently - Copy/app/src/main/res/layout/menitem.xml"
     },

@@ -24,22 +24,7 @@ public final class ActivityOrderBinding implements ViewBinding {
   public final ListView Dynamic;
 
   @NonNull
-  public final LinearLayout linearLayout15;
-
-  @NonNull
   public final LinearLayout linearLayout7;
-
-  @NonNull
-  public final TextView orderitemname2;
-
-  @NonNull
-  public final TextView orderitemnote2;
-
-  @NonNull
-  public final TextView orderitemnumber2;
-
-  @NonNull
-  public final TextView orderitemtotal2;
 
   @NonNull
   public final TextView textView4;
@@ -57,19 +42,11 @@ public final class ActivityOrderBinding implements ViewBinding {
   public final TextView textView9;
 
   private ActivityOrderBinding(@NonNull ConstraintLayout rootView, @NonNull ListView Dynamic,
-      @NonNull LinearLayout linearLayout15, @NonNull LinearLayout linearLayout7,
-      @NonNull TextView orderitemname2, @NonNull TextView orderitemnote2,
-      @NonNull TextView orderitemnumber2, @NonNull TextView orderitemtotal2,
-      @NonNull TextView textView4, @NonNull TextView textView6, @NonNull TextView textView7,
-      @NonNull TextView textView8, @NonNull TextView textView9) {
+      @NonNull LinearLayout linearLayout7, @NonNull TextView textView4, @NonNull TextView textView6,
+      @NonNull TextView textView7, @NonNull TextView textView8, @NonNull TextView textView9) {
     this.rootView = rootView;
     this.Dynamic = Dynamic;
-    this.linearLayout15 = linearLayout15;
     this.linearLayout7 = linearLayout7;
-    this.orderitemname2 = orderitemname2;
-    this.orderitemnote2 = orderitemnote2;
-    this.orderitemnumber2 = orderitemnumber2;
-    this.orderitemtotal2 = orderitemtotal2;
     this.textView4 = textView4;
     this.textView6 = textView6;
     this.textView7 = textView7;
@@ -110,39 +87,9 @@ public final class ActivityOrderBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.linearLayout15;
-      LinearLayout linearLayout15 = rootView.findViewById(id);
-      if (linearLayout15 == null) {
-        break missingId;
-      }
-
       id = R.id.linearLayout7;
       LinearLayout linearLayout7 = rootView.findViewById(id);
       if (linearLayout7 == null) {
-        break missingId;
-      }
-
-      id = R.id.orderitemname2;
-      TextView orderitemname2 = rootView.findViewById(id);
-      if (orderitemname2 == null) {
-        break missingId;
-      }
-
-      id = R.id.orderitemnote2;
-      TextView orderitemnote2 = rootView.findViewById(id);
-      if (orderitemnote2 == null) {
-        break missingId;
-      }
-
-      id = R.id.orderitemnumber2;
-      TextView orderitemnumber2 = rootView.findViewById(id);
-      if (orderitemnumber2 == null) {
-        break missingId;
-      }
-
-      id = R.id.orderitemtotal2;
-      TextView orderitemtotal2 = rootView.findViewById(id);
-      if (orderitemtotal2 == null) {
         break missingId;
       }
 
@@ -176,8 +123,7 @@ public final class ActivityOrderBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityOrderBinding((ConstraintLayout) rootView, Dynamic, linearLayout15,
-          linearLayout7, orderitemname2, orderitemnote2, orderitemnumber2, orderitemtotal2,
+      return new ActivityOrderBinding((ConstraintLayout) rootView, Dynamic, linearLayout7,
           textView4, textView6, textView7, textView8, textView9);
     }
     String missingId = rootView.getResources().getResourceName(id);

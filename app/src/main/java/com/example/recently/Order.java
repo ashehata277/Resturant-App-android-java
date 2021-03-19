@@ -11,14 +11,10 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -207,7 +203,7 @@ public class Order extends AppCompatActivity {
             LayoutInflater lay = getLayoutInflater();
             View view  = lay.inflate(R.layout.orderitem,parent,false);
             TextView name = view.findViewById(R.id.orderitemname);
-            TextView num = view.findViewById(R.id.orderitemnumber);
+            TextView num = view.findViewById(R.id.orderitemnumer);
             TextView note  = view.findViewById(R.id.orderitemnote);
             TextView total = view.findViewById(R.id.orderitemtotal);
             name.setText(content.get(position).getName());

@@ -1,5 +1,6 @@
-com/example/recently/databinding/OfferitemBinding.java
- com.example.recently.databinding.OfferitemBinding
+com/example/recently/RecieverBroadCast.java
+ com.example.recently.RecieverBroadCast
+ com.example.recently.RecieverBroadCast$1
 com/example/recently/databinding/ActivityShowLocationatWaitingBinding.java
  com.example.recently.databinding.ActivityShowLocationatWaitingBinding
 com/example/recently/databinding/ActivityUpdateDataBinding.java
@@ -31,14 +32,28 @@ com/example/recently/MainAppActivity.java
  com.example.recently.MainAppActivity
  com.example.recently.MainAppActivity$1
  com.example.recently.MainAppActivity$2
-com/example/recently/databinding/ActivityMainBinding.java
- com.example.recently.databinding.ActivityMainBinding
+com/example/recently/Order.java
+ com.example.recently.Order
+ com.example.recently.Order$1
+ com.example.recently.Order$1$1
+ com.example.recently.Order$2
+ com.example.recently.Order$3
+ com.example.recently.Order$3$1
+ com.example.recently.Order$3$2
+ com.example.recently.Order$3$3
+ com.example.recently.Order$Adapter
 com/example/recently/databinding/FragmentProfileBinding.java
  com.example.recently.databinding.FragmentProfileBinding
 com/example/recently/databinding/ActivityLocationBinding.java
  com.example.recently.databinding.ActivityLocationBinding
-com/example/recently/showLocationatWaiting.java
- com.example.recently.showLocationatWaiting
+com/example/recently/Card.java
+ com.example.recently.Card
+ com.example.recently.Card$1
+ com.example.recently.Card$2
+ com.example.recently.Card$Adapter
+ com.example.recently.Card$Adapter$1
+ com.example.recently.Card$Adapter$2
+ com.example.recently.Card$Adapter$3
 com/example/recently/databinding/RegistrationBinding.java
  com.example.recently.databinding.RegistrationBinding
 com/example/recently/MenuItem.java
@@ -79,8 +94,8 @@ com/example/recently/databinding/ActivityOrderBinding.java
  com.example.recently.databinding.ActivityOrderBinding
 com/example/recently/databinding/OrderitemBinding.java
  com.example.recently.databinding.OrderitemBinding
-com/example/recently/BuildConfig.java
- com.example.recently.BuildConfig
+com/example/recently/showLocationatWaiting.java
+ com.example.recently.showLocationatWaiting
 com/example/recently/databinding/FragmentMenuBinding.java
  com.example.recently.databinding.FragmentMenuBinding
 com/example/recently/databinding/FragmentOfferBinding.java
@@ -102,45 +117,12 @@ com/example/recently/Splash.java
  com.example.recently.Splash$2
 com/example/recently/databinding/MenitemBinding.java
  com.example.recently.databinding.MenitemBinding
-com/example/recently/profileFragment.java
- com.example.recently.profileFragment
- com.example.recently.profileFragment$1
- com.example.recently.profileFragment$2
- com.example.recently.profileFragment$3
- com.example.recently.profileFragment$4
-com/example/recently/databinding/RegisterdialogBinding.java
- com.example.recently.databinding.RegisterdialogBinding
-com/example/recently/databinding/ActivityWaitingBinding.java
- com.example.recently.databinding.ActivityWaitingBinding
-com/example/recently/RecieverBroadCast.java
- com.example.recently.RecieverBroadCast
- com.example.recently.RecieverBroadCast$1
-com/example/recently/Order.java
- com.example.recently.Order
- com.example.recently.Order$1
- com.example.recently.Order$1$1
- com.example.recently.Order$2
- com.example.recently.Order$3
- com.example.recently.Order$3$1
- com.example.recently.Order$3$2
- com.example.recently.Order$3$3
- com.example.recently.Order$Adapter
-com/example/recently/Location.java
- com.example.recently.Location
- com.example.recently.Location$1
- com.example.recently.Location$2
-com/example/recently/Card.java
- com.example.recently.Card
- com.example.recently.Card$1
- com.example.recently.Card$2
- com.example.recently.Card$Adapter
- com.example.recently.Card$Adapter$1
- com.example.recently.Card$Adapter$2
- com.example.recently.Card$Adapter$3
 com/example/recently/WaitForResponse.java
  com.example.recently.WaitForResponse
  com.example.recently.WaitForResponse$ForBound
  com.example.recently.WaitForResponse$UpdateBar
+com/example/recently/databinding/RegisterdialogBinding.java
+ com.example.recently.databinding.RegisterdialogBinding
 com/example/recently/WaitingActivity.java
  com.example.recently.WaitingActivity
  com.example.recently.WaitingActivity$1
@@ -149,3 +131,21 @@ com/example/recently/WaitingActivity.java
  com.example.recently.WaitingActivity$4
  com.example.recently.WaitingActivity$5
  com.example.recently.WaitingActivity$ChangeUI
+com/example/recently/databinding/OfferitemBinding.java
+ com.example.recently.databinding.OfferitemBinding
+com/example/recently/databinding/ActivityMainBinding.java
+ com.example.recently.databinding.ActivityMainBinding
+com/example/recently/profileFragment.java
+ com.example.recently.profileFragment
+ com.example.recently.profileFragment$1
+ com.example.recently.profileFragment$2
+ com.example.recently.profileFragment$3
+ com.example.recently.profileFragment$4
+com/example/recently/BuildConfig.java
+ com.example.recently.BuildConfig
+com/example/recently/databinding/ActivityWaitingBinding.java
+ com.example.recently.databinding.ActivityWaitingBinding
+com/example/recently/Location.java
+ com.example.recently.Location
+ com.example.recently.Location$1
+ com.example.recently.Location$2
